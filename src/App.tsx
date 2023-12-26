@@ -27,8 +27,10 @@ function App() {
 						fontFamily: "'Sawarabi Mincho', serif",
 					}}
 				>
-					<Container maxWidth='sm' sx={{ mb: '70px' }}>
+					<Box sx={{ position: 'fixed', top: 0, zIndex: 1000, width: '100%' }}>
 						<Header />
+					</Box>
+					<Container maxWidth='sm' sx={{ mt: '40px', mb: '70px' }}>
 						<TopLogo />
 						<Introduction />
 						<Price />

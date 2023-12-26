@@ -34,7 +34,7 @@ const IntroObj: IntroArray = [
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2FphotoComingSoon.png?alt=media&token=74afcc88-33ff-48e2-bae2-d06c503dc9bf',
 		typo: [
 			'フィンランドの燻されたサウナから着想し訪れる人を誘導する',
-			'胴縁炙り仕上げの壁。熊取の大工野沢棟梁により施行されました。',
+			'胴縁炙り仕上げの壁。熊取の大工野澤棟梁により施工されました。',
 		],
 	},
 	{
