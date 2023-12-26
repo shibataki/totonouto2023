@@ -18,6 +18,7 @@ export default function Footer() {
 			<Link
 				href='https://squareup.com/appointments/book/80qow5lpnzjxk6/LKYP0BZWKK5VX/services'
 				underline='none'
+				sx={{ width: '100%', textAlign: 'center' }}
 			>
 				<Typography sx={{ color: '#FFF', fontSize: '22px' }}>
 					ご予約はこちらから
