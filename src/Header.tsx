@@ -1,10 +1,14 @@
 import React from 'react'
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
-
+import Drawer from '@mui/material/Drawer'
+import { useState } from 'react'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
 import Link from '@mui/material/Link'
 
 type IconObj = { name: string; url: string; url2: string }
@@ -27,6 +31,8 @@ const Icons: IconObj[] = [
 ]
 
 export default function Header() {
+	const [isOpen, setIsOpen] = useState<boolean>(false)
+
 	return (
 		<AppBar position='static'>
 			<Toolbar variant='dense' sx={{ backgroundColor: '#000', height: '40px' }}>
@@ -34,10 +40,22 @@ export default function Header() {
 					edge='start'
 					color='inherit'
 					aria-label='menu'
+					onClick={() => setIsOpen(true)}
 					sx={{ mr: 2 }}
 				>
 					<MenuIcon />
 				</IconButton>
+				<Drawer anchor='left' open={isOpen} onClose={() => setIsOpen(false)}>
+					<Box sx={{ backgroundColor: '#3a3a3a', height: '100%' }}>
+						<List>
+							<ListItem disablePadding>
+								<ListItemButton>
+									<Typography sx={{ color: '#FFF' }}>トップ</Typography>
+								</ListItemButton>
+							</ListItem>
+						</List>
+					</Box>
+				</Drawer>
 				<Box sx={{ mr: 0, ml: 'auto' }}>
 					{Icons.map((Icon, i) => (
 						<Link href={Icon.url2}>

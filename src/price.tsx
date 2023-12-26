@@ -3,8 +3,7 @@ import { Box, Typography } from '@mui/material'
 import Grid from '@mui/material/Grid'
 
 const saunaName: string[] = ['フタリサウナ', 'イロリサウナ']
-const priceRange: string[] = ['4,800~9,000', '12,000~30,000']
-const futariPrice: string[] = ['1名：4,8000-', '2名：9,000-']
+const futariPrice: string[] = ['1名：4,800-', '2名：9,000-']
 const iroriPrice: string[] = [
 	'1名：12,000-',
 	'2名：12,000-',
@@ -30,7 +29,7 @@ const rentalName: string[] = [
 	'サウナハット',
 	'フェイスタオル',
 	'バスタオル',
-	'水着 - 男性用',
+	'水着 | 男性用',
 ]
 const rentalPrice: string[] = ['1000', '800', '500', '400', '800', '500']
 
@@ -77,13 +76,6 @@ export default function Price() {
 						</Box>
 					</Grid>
 				))}
-				{priceRange.map((content, i) => (
-					<Grid item xs={6}>
-						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
-							{content}
-						</Typography>
-					</Grid>
-				))}
 
 				<Grid item xs={6} sx={{ height: '105px' }}>
 					{futariPrice.map((content, i) => (
@@ -123,7 +115,11 @@ export default function Price() {
 						>
 							<Typography
 								key={i}
-								sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}
+								sx={{
+									fontSize: '16px',
+									writingMode: 'vertical-rl',
+									textOrientation: 'upright',
+								}}
 							>
 								{content}
 							</Typography>
@@ -161,7 +157,11 @@ export default function Price() {
 						>
 							<Typography
 								key={i}
-								sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}
+								sx={{
+									fontSize: '16px',
+									writingMode: 'vertical-rl',
+									textOrientation: 'upright',
+								}}
 							>
 								{content}
 							</Typography>
