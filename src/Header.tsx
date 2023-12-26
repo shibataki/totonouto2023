@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
 
 import Link from '@mui/material/Link'
+
 type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
 	{
@@ -28,7 +29,7 @@ const Icons: IconObj[] = [
 export default function Header() {
 	return (
 		<AppBar position='static'>
-			<Toolbar variant='dense' sx={{ backgroundColor: '#000' }}>
+			<Toolbar variant='dense' sx={{ backgroundColor: '#000', height: '40px' }}>
 				<IconButton
 					edge='start'
 					color='inherit'
