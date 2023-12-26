@@ -31,12 +31,24 @@ function App() {
 						<Header />
 					</Box>
 					<Container maxWidth='sm' sx={{ mt: '40px', mb: '70px' }}>
-						<TopLogo />
-						<Introduction />
-						<Price />
-						<GuidMap />
+						<Box id='top'>
+							<TopLogo />
+						</Box>
+						<Box id='introduction'>
+							<Introduction />
+						</Box>
+						<Box id='price'>
+							<Price />
+						</Box>
+						<Box id='guidMap'>
+							<GuidMap />
+						</Box>
+						<Box id='QA'> </Box>
 						<QA />
-						<Access />
+
+						<Box id='access'>
+							<Access />
+						</Box>
 					</Container>
 					<Box
 						sx={{ position: 'fixed', bottom: 0, zIndex: 1000, width: '100%' }}
