@@ -16,8 +16,8 @@ const containerStyle = {
 }
 
 const center = {
-	lat: 34.6163228,
-	lng: 135.5927798,
+	lat: 34.616142,
+	lng: 135.5936519,
 }
 
 export default function Access() {
