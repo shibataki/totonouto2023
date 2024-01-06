@@ -60,8 +60,8 @@ export default function Header() {
 						sx={{ backgroundColor: '#3a3a3a', height: '100%' }}
 					>
 						<List>
-							{scrollItems.map((content, i) => (
-								<ListItem disablePadding>
+							{scrollItems.map((content) => (
+								<ListItem disablePadding key={content.id}>
 									<ListItemButton>
 										<Scroll
 											to={content.id}
@@ -74,18 +74,17 @@ export default function Header() {
 												{content.text}
 											</Typography>
 										</Scroll>
-									</ListItemButton>{' '}
+									</ListItemButton>
 								</ListItem>
 							))}
 						</List>
 					</Box>
 				</Drawer>
 				<Box sx={{ mr: 0, ml: 'auto' }}>
-					{Icons.map((Icon, i) => (
-						<Link href={Icon.url2}>
+					{Icons.map((Icon) => (
+						<Link href={Icon.url2} key={Icon.name}>
 							<Box
 								component='img'
-								key={i}
 								src={Icon.url}
 								alt={Icon.name}
 								sx={{ ml: 2, width: '20px', height: '20px' }}

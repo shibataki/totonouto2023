@@ -140,11 +140,12 @@ export default function QA() {
 				>
 					Q&A
 				</Typography>
-				{QAs.map((content, i) => (
+				{QAs.map((content) => (
 					<Accordion
 						expanded={expanded === content.Q}
 						onChange={handleChange(content.Q)}
 						sx={{ background: '#333333', color: '#FFF' }}
+						key={content.Q}
 					>
 						<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
@@ -159,8 +160,10 @@ export default function QA() {
 						</AccordionSummary>
 						<AccordionDetails>
 							<Divider sx={{ background: '#FFF', mb: 1 }} />
-							{content.A.map((ans) => (
-								<Typography sx={{ fontSize: '12px' }}>{ans}</Typography>
+							{content.A.map((ans, i) => (
+								<Typography key={i} sx={{ fontSize: '12px' }}>
+									{ans}
+								</Typography>
 							))}
 						</AccordionDetails>
 					</Accordion>
