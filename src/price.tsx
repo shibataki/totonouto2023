@@ -13,28 +13,52 @@ const iroriPrice: string[] = [
 	'6名：30,000-',
 ]
 
-const drinkName: string[] = [
-	'シャリシャリオロポ',
-	'オロナミンC',
-	'ポカリスエット',
-	'イオンウォーター',
-	'ビール',
-	'ロンケロ',
+const drinkName: { id: string; name: string }[] = [
+	{ id: '1', name: 'シャリシャリオロポ' },
+	{ id: '2', name: 'オロナミンC' },
+	{ id: '3', name: 'ポカリスエット' },
+	{ id: '4', name: 'イオンウォーター' },
+	{ id: '5', name: 'ビール' },
+	{ id: '6', name: 'ロンケロ' },
 ]
-const drinkPrice: string[] = ['500', '200', '300', '300', '500', '600']
-
-const rentalName: string[] = [
-	'2点セット',
-	'ポンチョ',
-	'サウナハット',
-	'フェイスタオル',
-	'バスタオル',
-	'水着 | 男性用',
+const drinkPrice: { id: string; price: string }[] = [
+	{ id: '1', price: '500' },
+	{ id: '2', price: '200' },
+	{ id: '3', price: '300' },
+	{ id: '4', price: '300' },
+	{ id: '5', price: '500' },
+	{ id: '6', price: '600' },
 ]
-const rentalPrice: string[] = ['1000', '800', '500', '400', '800', '500']
 
-const aromaName: string[] = ['シラカバ', 'ユーカリ', 'シトラス', '森林']
-const aromaPrice: string[] = ['300', '300', '300', '300']
+const rentalName: { id: string; name: string }[] = [
+	{ id: '1', name: '2点セット' },
+	{ id: '2', name: 'ポンチョ' },
+	{ id: '3', name: 'サウナハット' },
+	{ id: '4', name: 'フェイスタオル' },
+	{ id: '5', name: 'バスタオル' },
+	{ id: '6', name: '水着 | 男性用' },
+]
+const rentalPrice: { id: string; price: string }[] = [
+	{ id: '1', price: '1000' },
+	{ id: '2', price: '800' },
+	{ id: '3', price: '500' },
+	{ id: '4', price: '400' },
+	{ id: '5', price: '800' },
+	{ id: '6', price: '500' },
+]
+
+const aromaName: { id: string; name: string }[] = [
+	{ id: '1', name: 'シラカバ' },
+	{ id: '2', name: 'ユーカリ' },
+	{ id: '3', name: 'シトラス' },
+	{ id: '4', name: '森林' },
+]
+const aromaPrice: { id: string; price: string }[] = [
+	{ id: '1', price: '300' },
+	{ id: '2', price: '300' },
+	{ id: '3', price: '300' },
+	{ id: '4', price: '300' },
+]
 
 const amenitiesName: string[] = [
 	'ドライヤー',
@@ -71,8 +95,8 @@ export default function Price() {
 						料金
 					</Typography>
 				</Grid>
-				{saunaName.map((content, i) => (
-					<Grid item xs={6}>
+				{saunaName.map((content) => (
+					<Grid item xs={6} key={content}>
 						<Box
 							sx={{
 								display: 'flex',
@@ -80,10 +104,7 @@ export default function Price() {
 								alignContent: 'center',
 							}}
 						>
-							<Typography
-								key={i}
-								sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}
-							>
+							<Typography sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}>
 								{content}
 							</Typography>
 						</Box>
@@ -91,15 +112,21 @@ export default function Price() {
 				))}
 
 				<Grid item xs={6} sx={{ height: '105px' }}>
-					{futariPrice.map((content, i) => (
-						<Typography sx={{ fontSize: '10px', textAlign: 'center', mb: 0.2 }}>
+					{futariPrice.map((content) => (
+						<Typography
+							sx={{ fontSize: '10px', textAlign: 'center', mb: 0.2 }}
+							key={content}
+						>
 							{content}
 						</Typography>
 					))}
 				</Grid>
 				<Grid item xs={6}>
-					{iroriPrice.map((content, i) => (
-						<Typography sx={{ fontSize: '10px', textAlign: 'center', mb: 0.2 }}>
+					{iroriPrice.map((content) => (
+						<Typography
+							sx={{ fontSize: '10px', textAlign: 'center', mb: 0.2 }}
+							key={content}
+						>
 							{content}
 						</Typography>
 					))}
@@ -117,8 +144,8 @@ export default function Price() {
 					</Typography>
 				</Grid>
 
-				{drinkName.map((content, i) => (
-					<Grid item xs={2}>
+				{drinkName.map((content) => (
+					<Grid item xs={2} key={content.id}>
 						<Box
 							sx={{
 								display: 'flex',
@@ -127,23 +154,22 @@ export default function Price() {
 							}}
 						>
 							<Typography
-								key={i}
 								sx={{
 									fontSize: '16px',
 									writingMode: 'vertical-rl',
 									textOrientation: 'upright',
 								}}
 							>
-								{content}
+								{content.name}
 							</Typography>
 						</Box>
 					</Grid>
 				))}
 
-				{drinkPrice.map((content, i) => (
-					<Grid item xs={2}>
+				{drinkPrice.map((content) => (
+					<Grid item xs={2} key={content.id}>
 						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
-							{content}
+							{content.price}
 						</Typography>
 					</Grid>
 				))}
@@ -159,8 +185,8 @@ export default function Price() {
 						レンタル
 					</Typography>
 				</Grid>
-				{rentalName.map((content, i) => (
-					<Grid item xs={2}>
+				{rentalName.map((content) => (
+					<Grid item xs={2} key={content.id}>
 						<Box
 							sx={{
 								display: 'flex',
@@ -169,23 +195,22 @@ export default function Price() {
 							}}
 						>
 							<Typography
-								key={i}
 								sx={{
 									fontSize: '16px',
 									writingMode: 'vertical-rl',
 									textOrientation: 'upright',
 								}}
 							>
-								{content}
+								{content.name}
 							</Typography>
 						</Box>
 					</Grid>
 				))}
 
-				{rentalPrice.map((content, i) => (
-					<Grid item xs={2}>
+				{rentalPrice.map((content) => (
+					<Grid item xs={2} key={content.id}>
 						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
-							{content}
+							{content.price}
 						</Typography>
 					</Grid>
 				))}
@@ -201,8 +226,8 @@ export default function Price() {
 						アロマ
 					</Typography>
 				</Grid>
-				{aromaName.map((content, i) => (
-					<Grid item xs={3}>
+				{aromaName.map((content) => (
+					<Grid item xs={3} key={content.id}>
 						<Box
 							sx={{
 								display: 'flex',
@@ -210,20 +235,17 @@ export default function Price() {
 								alignContent: 'center',
 							}}
 						>
-							<Typography
-								key={i}
-								sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}
-							>
-								{content}
+							<Typography sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}>
+								{content.name}
 							</Typography>
 						</Box>
 					</Grid>
 				))}
 
-				{aromaPrice.map((content, i) => (
-					<Grid item xs={3}>
+				{aromaPrice.map((content) => (
+					<Grid item xs={3} key={content.id}>
 						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
-							{content}
+							{content.price}
 						</Typography>
 					</Grid>
 				))}
@@ -240,8 +262,8 @@ export default function Price() {
 					</Typography>
 				</Grid>
 
-				{amenitiesName.map((content, i) => (
-					<Grid item xs={1.2}>
+				{amenitiesName.map((content) => (
+					<Grid item xs={1.2} key={content}>
 						<Box
 							sx={{
 								display: 'flex',
@@ -249,10 +271,7 @@ export default function Price() {
 								alignContent: 'center',
 							}}
 						>
-							<Typography
-								key={i}
-								sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}
-							>
+							<Typography sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}>
 								{content}
 							</Typography>
 						</Box>
