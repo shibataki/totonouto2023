@@ -31,7 +31,7 @@ function App() {
 						<Header />
 					</Box>
 					<Container maxWidth='sm' sx={{ mt: '40px', mb: '70px' }}>
-						<Box id='top'>
+						<Box id='top' sx={{ mt: '60px' }}>
 							<TopLogo />
 						</Box>
 						<Box id='introduction'>
