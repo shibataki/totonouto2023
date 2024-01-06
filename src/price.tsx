@@ -36,6 +36,19 @@ const rentalPrice: string[] = ['1000', '800', '500', '400', '800', '500']
 const aromaName: string[] = ['シラカバ', 'ユーカリ', 'シトラス', '森林']
 const aromaPrice: string[] = ['300', '300', '300', '300']
 
+const amenitiesName: string[] = [
+	'ドライヤー',
+	'化粧水',
+	'乳液',
+	'クレンジング',
+	'コットン',
+	'綿棒',
+	'シャンプー',
+	'コンディショナー',
+	'ボディソープ',
+	'腕時計',
+]
+
 export default function Price() {
 	return (
 		<Box sx={{ paddingX: '10%', mb: 5 }}>
@@ -43,7 +56,7 @@ export default function Price() {
 				container
 				spacing={2}
 				sx={{ color: '#FFF' }}
-				alignItems={'center'}
+				alignItems={'flex-start'}
 				justifyItems={'center'}
 			>
 				<Grid item xs={12}>
@@ -100,7 +113,7 @@ export default function Price() {
 							mt: 5,
 						}}
 					>
-						Drink
+						ドリンク
 					</Typography>
 				</Grid>
 
@@ -143,7 +156,7 @@ export default function Price() {
 							mt: 5,
 						}}
 					>
-						Rental
+						レンタル
 					</Typography>
 				</Grid>
 				{rentalName.map((content, i) => (
@@ -212,6 +225,37 @@ export default function Price() {
 						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
 							{content}
 						</Typography>
+					</Grid>
+				))}
+				<Grid item xs={12}>
+					<Typography
+						sx={{
+							fontSize: '18px',
+							color: '#FFF',
+							textAlign: 'center',
+							mt: 5,
+						}}
+					>
+						アメニティ
+					</Typography>
+				</Grid>
+
+				{amenitiesName.map((content, i) => (
+					<Grid item xs={1.2}>
+						<Box
+							sx={{
+								display: 'flex',
+								justifyContent: 'center',
+								alignContent: 'center',
+							}}
+						>
+							<Typography
+								key={i}
+								sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}
+							>
+								{content}
+							</Typography>
+						</Box>
 					</Grid>
 				))}
 			</Grid>
