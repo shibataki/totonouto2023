@@ -1,8 +1,16 @@
 import React from 'react'
+
 import { Box, Typography } from '@mui/material'
 
 import { ThemeProvider, createTheme } from '@mui/material/styles'
-import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api'
+
+import { Wrapper, Status } from '@googlemaps/react-wrapper'
+import { Map } from './Map'
+import { Marker } from './Marker'
+
+const render = (status: Status) => {
+	return <h1>{status}</h1>
+}
 
 const AccessTheme = createTheme({
 	typography: {
@@ -10,29 +18,31 @@ const AccessTheme = createTheme({
 		fontSize: 10,
 	},
 })
-const containerStyle = {
-	width: '100%',
-	height: '50vh',
-}
-
-const center = {
-	lat: 34.616142,
-	lng: 135.5936519,
-}
 
 export default function Access() {
+	const position: google.maps.LatLngLiteral = {
+		lat: 34.616142,
+		lng: 135.5936519,
+	}
+
 	return (
 		<Box sx={{ color: '#FFF', textAlign: 'center' }}>
 			<Box sx={{ mb: 1 }}>
 				<Typography sx={{ fontSize: '18px' }}>アクセス</Typography>
 			</Box>
-			<LoadScript
-				googleMapsApiKey={process.env.REACT_APP_MAPS_JAVASCRIPT_APIKEY}
+
+			<Wrapper
+				apiKey={process.env.REACT_APP_MAPS_JAVASCRIPT_APIKEY}
+				render={render}
 			>
-				<GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
-					<MarkerF position={center} />
-				</GoogleMap>
-			</LoadScript>
+				<Map
+					style={{ width: '100%', aspectRatio: '1/1' }}
+					center={position}
+					zoom={15}
+				>
+					<Marker position={position} />
+				</Map>
+			</Wrapper>
 			<ThemeProvider theme={AccessTheme}>
 				<Box sx={{ mb: 3 }}>
 					<Typography>〒581-0084</Typography>
