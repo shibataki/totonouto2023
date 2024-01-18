@@ -170,7 +170,6 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 									height='auto'
 									src={url}
 									alt={alt + i}
-									sx={{}}
 									key={url}
 								/>
 							))}
