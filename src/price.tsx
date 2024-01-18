@@ -5,7 +5,6 @@ import Grid from '@mui/material/Grid'
 const saunaName: string[] = ['フタリサウナ', 'イロリサウナ']
 const futariPrice: string[] = ['1名：4,800-', '2名：9,000-']
 const iroriPrice: string[] = [
-	'1名：12,000-',
 	'2名：12,000-',
 	'3名：17,100-',
 	'4名：22,000-',
