@@ -15,6 +15,11 @@ import { Link as Scroll } from 'react-scroll'
 type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
 	{
+		name: 'LINE',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FLINE_Brand_icon.png?alt=media&token=534427d4-ad3c-4e5e-88e2-4716f6f8e1a7',
+		url2: 'https://lin.ee/vQYTxe4',
+	},
+	{
 		name: 'X',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2Flogo-white.png?alt=media&token=d911f3a2-cefa-461e-a69d-bc4c40e2794f',
 		url2: 'https://twitter.com/sauna_totonouto',
