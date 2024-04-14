@@ -49,14 +49,10 @@ const rentalPrice: { id: string; price: string }[] = [
 const aromaName: { id: string; name: string }[] = [
 	{ id: '1', name: 'シラカバ' },
 	{ id: '2', name: 'ユーカリ' },
-	{ id: '3', name: 'シトラス' },
-	{ id: '4', name: '森林' },
 ]
 const aromaPrice: { id: string; price: string }[] = [
 	{ id: '1', price: '300' },
 	{ id: '2', price: '300' },
-	{ id: '3', price: '300' },
-	{ id: '4', price: '300' },
 ]
 
 const amenitiesName: string[] = [
@@ -226,7 +222,7 @@ export default function Price() {
 					</Typography>
 				</Grid>
 				{aromaName.map((content) => (
-					<Grid item xs={3} key={content.id}>
+					<Grid item xs={6} key={content.id}>
 						<Box
 							sx={{
 								display: 'flex',
@@ -242,7 +238,7 @@ export default function Price() {
 				))}
 
 				{aromaPrice.map((content) => (
-					<Grid item xs={3} key={content.id}>
+					<Grid item xs={6} key={content.id}>
 						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
 							{content.price}
 						</Typography>
