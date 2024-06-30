@@ -17,16 +17,14 @@ const drinkName: { id: string; name: string }[] = [
 	{ id: '2', name: 'オロナミンC' },
 	{ id: '3', name: 'ポカリスエット' },
 	{ id: '4', name: 'イオンウォーター' },
-	{ id: '5', name: 'ビール' },
-	{ id: '6', name: 'ロンケロ' },
+	{ id: '5', name: 'ミネラルウォーター' },
 ]
 const drinkPrice: { id: string; price: string }[] = [
 	{ id: '1', price: '500' },
 	{ id: '2', price: '200' },
 	{ id: '3', price: '300' },
 	{ id: '4', price: '300' },
-	{ id: '5', price: '500' },
-	{ id: '6', price: '600' },
+	{ id: '5', price: '150' },
 ]
 
 const rentalName: { id: string; name: string }[] = [
@@ -60,7 +58,7 @@ const amenitiesName: string[] = [
 	'化粧水',
 	'乳液',
 	'クレンジング',
-	'コットン',
+
 	'綿棒',
 	'シャンプー',
 	'コンディショナー',
@@ -140,7 +138,7 @@ export default function Price() {
 				</Grid>
 
 				{drinkName.map((content) => (
-					<Grid item xs={2} key={content.id}>
+					<Grid item xs={2.4} key={content.id}>
 						<Box
 							sx={{
 								display: 'flex',
@@ -162,7 +160,7 @@ export default function Price() {
 				))}
 
 				{drinkPrice.map((content) => (
-					<Grid item xs={2} key={content.id}>
+					<Grid item xs={2.4} key={content.id}>
 						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
 							{content.price}
 						</Typography>
@@ -258,7 +256,7 @@ export default function Price() {
 				</Grid>
 
 				{amenitiesName.map((content) => (
-					<Grid item xs={1.2} key={content}>
+					<Grid item xs={1.3} key={content}>
 						<Box
 							sx={{
 								display: 'flex',
