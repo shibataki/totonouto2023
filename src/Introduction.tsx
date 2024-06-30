@@ -22,8 +22,7 @@ const IntroObj: IntroArray = [
 		left: false,
 		alt: 'フタリサウナ',
 		urls: [
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fo5c344094b5472ca6a4b513625f00a14d_4620693218578096449_210808_37.jpg?alt=media&token=542d7691-1e7d-4cdc-9e85-2565791e4a95',
-
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari.jpg?alt=media&token=e4bbe4de-07d0-485e-b053-ad644f4eb2be',
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpg?alt=media&token=dea80162-b732-4ca1-989c-32b6da5d5510',
 		],
 		typo: [
