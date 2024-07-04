@@ -25,6 +25,7 @@ function App() {
 				<Container
 					sx={{
 						fontFamily: "'Sawarabi Mincho', serif",
+						p: 0,
 					}}
 				>
 					<Box sx={{ position: 'fixed', top: 0, zIndex: 1000, width: '100%' }}>
