@@ -6,19 +6,19 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const Imgs: { alt: string; url: string }[] = [
 	{
-		alt: '貸切サウナととのうと',
+		alt: '大阪府の貸切サウナととのうと',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg1.png?alt=media&token=687f6259-30e3-4d48-a3d9-38cbc29b96ca',
 	},
 	{
-		alt: '貸切サウナととのうと',
+		alt: '大阪府の貸切サウナととのうと',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg2.png?alt=media&token=99ca046f-321a-405a-8e91-bdabab590106',
 	},
 	{
-		alt: '貸切サウナととのうと',
+		alt: '大阪府の貸切サウナととのうと',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg3.png?alt=media&token=a6b6c8e8-e5de-4067-992c-6c78626fe1cb',
 	},
 	{
-		alt: '貸切サウナととのうと',
+		alt: '大阪府の貸切サウナととのうと',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg4.png?alt=media&token=4f2aebd8-765b-403e-bcbb-1d2888642cb1',
 	},
 ]

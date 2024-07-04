@@ -26,8 +26,9 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpg?alt=media&token=dea80162-b732-4ca1-989c-32b6da5d5510',
 		],
 		typo: [
-			'店主こだわりのサウナ室',
+			'店主こだわりのサウナ室でプライベートな空間をお楽しみください。',
 			'小さな空間でのセルフロウリュは体感温度をグッと上昇させます。',
+			'熱いサウナがお好みの方におすすめです。',
 		],
 	},
 	{
@@ -41,8 +42,9 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori4.jpg?alt=media&token=c6bb03e4-8190-4c4e-92f9-76715e6bdd80',
 		],
 		typo: [
-			'囲炉裏を囲み食事や暖をとり',
-			'家族と語らい合う日本古来の様式を取り入れたサウナ室',
+			'囲炉裏を囲み食事や暖をとり、家族と語らい合う日本古来の様式を取り入れたサウナ室',
+			'6名様までご利用できるサウナ室になります。ご友人同士でのプライベートな空間をお楽しみください',
+			'男女利用、カップル利用可能ですので、サウナデートにもおすすめです。',
 		],
 	},
 	{
@@ -53,7 +55,7 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa2.jpg?alt=media&token=1d44f32d-18a3-47b1-a853-1c8fe4c1970c',
 		],
 		typo: [
-			'フィンランドの燻されたサウナから着想し訪れる人を誘導する',
+			'フィンランドのスモークサウナから着想し訪れる人を誘導する',
 			'胴縁炙り仕上げの壁。熊取の大工野澤棟梁により施工されました。',
 		],
 	},
@@ -70,7 +72,7 @@ const IntroObj: IntroArray = [
 		typo: [
 			'八尾の庭師 だるま 中塚氏により',
 			'2100年に森になることを想定し作庭されました。',
-			'豊岡の滝と合わせてお愉しみください',
+			'草花に囲まれた外気浴は格別です。',
 		],
 	},
 	{
@@ -80,8 +82,8 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftaki.jpg?alt=media&token=fa2d7019-1d52-462d-98d4-7d9bffae5558',
 		],
 		typo: [
-			'サウナを愛する皆様に是非とも体感いただきたい',
-			'頭上より降り注ぐ滝',
+			'サウナを愛する皆様に是非とも体感いただきたい、頭上より降り注ぐ滝',
+			'頭からドバッと水を被りたい方におすすめです。※冬場は水がかなり冷たく',
 			'豊岡親子により施行されました',
 		],
 	},
@@ -92,9 +94,9 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftatemichi.jpg?alt=media&token=e4f21ead-2d93-4680-8f3d-af78235e4df1',
 		],
 		typo: [
-			'しっとりとした空間に明かりを灯します。',
-			'夜の灯りも是非お楽しみください。',
 			'立道親子により施行されました。',
+			'しっとりとした空間に明かりを灯します。',
+			'夜の灯りも是非お楽しみください。カップルでもご友人同士でも楽しめる素敵な空間です。',
 		],
 	},
 ]
@@ -142,8 +144,11 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 						}}
 					>
 						<Typography>{alt}</Typography>
-						<Typography sx={{ fontSize: '8px' }}>{text[0]}</Typography>
-						<Typography sx={{ fontSize: '8px' }}>{text[1]}</Typography>
+						{text.map((text) => (
+							<Typography key={text} sx={{ fontSize: '8px' }}>
+								{text}
+							</Typography>
+						))}
 					</Box>
 				</Box>
 			)}
@@ -157,8 +162,11 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 						}}
 					>
 						<Typography>{alt}</Typography>
-						<Typography sx={{ fontSize: '8px' }}>{text[0]}</Typography>
-						<Typography sx={{ fontSize: '8px' }}>{text[1]}</Typography>
+						{text.map((text) => (
+							<Typography key={text} sx={{ fontSize: '8px' }}>
+								{text}
+							</Typography>
+						))}
 					</Box>
 					<Box sx={{ width: '80%', margin: 'auto' }}>
 						<Slider {...settings}>

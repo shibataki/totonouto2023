@@ -22,7 +22,7 @@ function App() {
 	return (
 		<>
 			<ThemeProvider theme={theme}>
-				<Box
+				<Container
 					sx={{
 						fontFamily: "'Sawarabi Mincho', serif",
 					}}
@@ -31,7 +31,7 @@ function App() {
 						<Header />
 					</Box>
 					<Container maxWidth='sm' sx={{ mt: '40px', mb: '70px' }}>
-						<Box id='top' sx={{ mt: '60px' }}>
+						<Box id='top' sx={{}}>
 							<TopLogo />
 						</Box>
 						<Box id='introduction'>
@@ -55,7 +55,7 @@ function App() {
 					>
 						<Footer />
 					</Box>
-				</Box>
+				</Container>
 			</ThemeProvider>
 		</>
 	)
