@@ -121,7 +121,7 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 		>
 			{left === false && (
 				<Box sx={{ display: 'flex', backgroundColor: '#000' }}>
-					<Box sx={{ width: '80%', margin: 'auto' }}>
+					<Box sx={{ width: '75%', margin: 'auto' }}>
 						<Slider {...settings}>
 							{urls.map((url, i) => (
 								<Box
@@ -138,7 +138,7 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 					</Box>
 					<Box
 						sx={{
-							width: '20%',
+							width: '25%',
 							backgroundColor: '#3A3A3A',
 							writingMode: 'vertical-rl',
 						}}
@@ -156,7 +156,7 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 				<Box sx={{ display: 'flex', backgroundColor: '#000' }}>
 					<Box
 						sx={{
-							width: '20%',
+							width: '25%',
 							backgroundColor: '#3A3A3A',
 							writingMode: 'vertical-rl',
 						}}
@@ -168,7 +168,7 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 							</Typography>
 						))}
 					</Box>
-					<Box sx={{ width: '80%', margin: 'auto' }}>
+					<Box sx={{ width: '75%', margin: 'auto' }}>
 						<Slider {...settings}>
 							{urls.map((url, i) => (
 								<Box
