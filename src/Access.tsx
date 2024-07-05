@@ -49,7 +49,7 @@ export default function Access() {
 					<Typography>大阪府八尾市植松町5-5-15</Typography>
 				</Box>
 				<Box sx={{ mb: 3 }}>
-					<Typography>【電車でお越しの方へ</Typography>
+					<Typography>【電車でお越しの方へ】</Typography>
 					<Typography>JR八尾から徒歩4分</Typography>
 					<Typography>近鉄八尾から徒歩20分</Typography>
 				</Box>
