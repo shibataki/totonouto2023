@@ -11,6 +11,7 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import Link from '@mui/material/Link'
 import { Link as Scroll } from 'react-scroll'
+import { Link as DomLink } from 'react-router-dom'
 
 type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
@@ -36,7 +37,7 @@ const Icons: IconObj[] = [
 	},
 ]
 const scrollItems: { id: string; text: string }[] = [
-	{ id: 'top', text: 'トップ' },
+	{ id: 'top', text: 'ページ最上部' },
 	{ id: 'introduction', text: '施設紹介' },
 	{ id: 'price', text: '料金' },
 	{ id: 'guidMap', text: 'フロアマップ' },
@@ -83,11 +84,11 @@ export default function Header() {
 								</ListItem>
 							))}
 							<ListItem disablePadding>
-								<Link href='/SaunaWords' underline='none'>
+								<DomLink to='SaunaWords' style={{ textDecoration: 'none' }}>
 									<ListItemButton>
 										<Typography sx={{ color: '#FFF' }}>サウナ用語集</Typography>
 									</ListItemButton>
-								</Link>
+								</DomLink>
 							</ListItem>
 						</List>
 					</Box>
