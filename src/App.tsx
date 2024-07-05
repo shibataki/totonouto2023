@@ -11,7 +11,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path='/' element={<TopPage />} />
-					<Route path='saunaWords' element={<SaunaWords />} />
+					<Route path='/saunaWords' element={<SaunaWords />} />
 				</Routes>
 			</Router>
 		</>
