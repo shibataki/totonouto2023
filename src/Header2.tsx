@@ -10,7 +10,6 @@ import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import Link from '@mui/material/Link'
-import { Link as Scroll } from 'react-scroll'
 
 type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
@@ -35,16 +34,8 @@ const Icons: IconObj[] = [
 		url2: 'https://www.facebook.com/sauna.totonouto',
 	},
 ]
-const scrollItems: { id: string; text: string }[] = [
-	{ id: 'top', text: 'トップ' },
-	{ id: 'introduction', text: '施設紹介' },
-	{ id: 'price', text: '料金' },
-	{ id: 'guidMap', text: 'フロアマップ' },
-	{ id: 'QA', text: 'よくある質問' },
-	{ id: 'access', text: 'アクセス' },
-]
 
-export default function Header() {
+export default function Header2() {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
 
 	return (
@@ -65,27 +56,10 @@ export default function Header() {
 						sx={{ backgroundColor: '#3a3a3a', height: '100%' }}
 					>
 						<List>
-							{scrollItems.map((content) => (
-								<ListItem disablePadding key={content.id}>
-									<ListItemButton>
-										<Scroll
-											to={content.id}
-											smooth={true}
-											duration={600}
-											offset={-60}
-											onClick={() => setIsOpen(false)}
-										>
-											<Typography sx={{ color: '#FFF' }}>
-												{content.text}
-											</Typography>
-										</Scroll>
-									</ListItemButton>
-								</ListItem>
-							))}
 							<ListItem disablePadding>
-								<Link href='/SaunaWords' underline='none'>
+								<Link href='/' underline='none'>
 									<ListItemButton>
-										<Typography sx={{ color: '#FFF' }}>サウナ用語集</Typography>
+										<Typography sx={{ color: '#FFF' }}>トップページ</Typography>
 									</ListItemButton>
 								</Link>
 							</ListItem>
