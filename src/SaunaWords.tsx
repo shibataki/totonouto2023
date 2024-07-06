@@ -12,12 +12,17 @@ import Link from '@mui/material/Link'
 const theme = createTheme({
 	typography: {
 		fontFamily: ["'Zen Old Mincho', serif"].join(','),
-		body2: {
+		body1: {
 			fontWeight: 400,
 			fontFamily: "'Noto Sans JP', sans-serif;",
 			fontSize: 15,
 		},
-		h6: {
+		h2: {
+			fontWeight: 600,
+			fontFamily: "'Noto Sans JP', sans-serif;",
+			fontSize: 36,
+		},
+		h3: {
 			fontWeight: 600,
 			fontFamily: "'Noto Sans JP', sans-serif;",
 			fontSize: 22,
@@ -44,18 +49,21 @@ function WordItem({
 }: WordItemProps) {
 	return (
 		<Box sx={{ my: 5 }}>
-			<Typography variant='h6'>{word}</Typography>
+			<Typography variant='h3'>{word}</Typography>
 			<Divider sx={{ background: '#FFF', mb: 1 }} />
 			<Box>
 				{text.map((text) => (
-					<Typography variant='body2' key={text}>
+					<Typography variant='body1' key={text}>
 						{text}
 					</Typography>
 				))}
 			</Box>
+
+			<Box component='img' width='100%' src={imgUrl} alt={alt} />
+
 			{linkUrls.map((url, i) => (
 				<Link href={url} key='{url}' sx={{ color: '#99CCFF' }} color='inherit'>
-					<Typography variant='body2'>{linkText[i]}</Typography>
+					<Typography variant='body1'>{linkText[i]}</Typography>
 				</Link>
 			))}
 			<Divider sx={{ background: '#FFF', my: 1 }} />
@@ -79,7 +87,7 @@ export default function SaunaWords() {
 					sx={{ mt: '60px', mb: '70px', color: '#FFF', p: 2 }}
 				>
 					<Box>
-						<Typography variant='h5' sx={{ my: 2 }}>
+						<Typography variant='h2' sx={{ my: 2 }}>
 							サウナ用語集
 						</Typography>
 					</Box>
@@ -128,8 +136,9 @@ const wordList: WordItemProps[] = [
 		],
 		linkUrls: [''],
 		linkText: [''],
-		imgUrl: '',
-		alt: '',
+		imgUrl:
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari.jpg?alt=media&token=e4bbe4de-07d0-485e-b053-ad644f4eb2be',
+		alt: '貸切サウナととのうとのサウナストーブ',
 	},
 	{
 		word: 'サウナストーン',
@@ -139,8 +148,9 @@ const wordList: WordItemProps[] = [
 		],
 		linkUrls: [''],
 		linkText: [''],
-		imgUrl: '',
-		alt: '',
+		imgUrl:
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori2.jpg?alt=media&token=db345b16-4296-4c83-b13a-235ea40c5712',
+		alt: '貸切サウナととのうとのサウナストーン',
 	},
 	{
 		word: 'ロウリュ',
@@ -196,6 +206,19 @@ const wordList: WordItemProps[] = [
 		alt: '',
 	},
 	{
+		word: '外気浴',
+		text: [
+			'外で休憩すること。外の景色や風を楽しむことができる。',
+			'貸切サウナととのうとには素敵なお庭があります。通称だるまの庭。植物たちを眺めながら風にあたると格別です。椅子に座ったり、レンガに寝転んだり各々のやり方でお楽しみください。',
+			'ととのうとのお庭を作った人：だるまと店主とその仲間たち',
+		],
+		linkUrls: ['https://www.instagram.com/daruma.244/'],
+		linkText: ['ニワダルマ'],
+		imgUrl:
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma.jpg?alt=media&token=72763422-ac9d-4bb5-a316-dceb812c1dc6',
+		alt: '貸切サウナととのうとの外気浴場',
+	},
+	{
 		word: '水風呂',
 		text: [
 			'水のお風呂。銭湯とかだと18度くらいが多い。',
@@ -204,8 +227,9 @@ const wordList: WordItemProps[] = [
 		],
 		linkUrls: [''],
 		linkText: [''],
-		imgUrl: '',
-		alt: '',
+		imgUrl:
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpg?alt=media&token=dea80162-b732-4ca1-989c-32b6da5d5510',
+		alt: '貸切サウナととのうとの水風呂',
 	},
 	{
 		word: 'チラー',
@@ -238,18 +262,7 @@ const wordList: WordItemProps[] = [
 		imgUrl: '',
 		alt: '',
 	},
-	{
-		word: '外気浴',
-		text: [
-			'外で休憩すること。外の景色や風を楽しむことができる。',
-			'貸切サウナととのうとには素敵なお庭があります。通称だるまの庭。植物たちを眺めながら風にあたると格別です。椅子に座ったり、レンガに寝転んだり各々のやり方でお楽しみください。',
-			'ととのうとのお庭を作った人：だるまと店主とその仲間たち',
-		],
-		linkUrls: ['https://www.instagram.com/daruma.244/'],
-		linkText: ['ニワダルマ'],
-		imgUrl: '',
-		alt: '',
-	},
+
 	{
 		word: 'ととのう',
 		text: [
