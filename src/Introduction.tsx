@@ -5,21 +5,18 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 interface IntroductionCardProps {
-	left: boolean
 	alt: string
 	urls: string[]
 	text: string[]
 }
 
 type IntroArray = {
-	left: boolean
 	alt: string
 	urls: string[]
 	typo: string[]
 }[]
 const IntroObj: IntroArray = [
 	{
-		left: false,
 		alt: 'フタリサウナ',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari.jpg?alt=media&token=e4bbe4de-07d0-485e-b053-ad644f4eb2be',
@@ -32,7 +29,6 @@ const IntroObj: IntroArray = [
 		],
 	},
 	{
-		left: true,
 		alt: 'イロリサウナ',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori.jpg?alt=media&token=80a1b1c0-558d-4ee3-9241-3124301e6676',
@@ -42,13 +38,12 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori4.jpg?alt=media&token=c6bb03e4-8190-4c4e-92f9-76715e6bdd80',
 		],
 		typo: [
-			'囲炉裏を囲み食事や暖をとり、家族と語らい合う日本古来の様式を取り入れたサウナ室',
-			'六名様までご利用できるサウナ室になります。ご友人同士でのプライベートな空間をお楽しみください',
+			'囲炉裏を囲み食事や暖をとり、家族と語らい合う日本古来の様式を取り入れたサウナ室。',
+			'6名様までご利用できるサウナ室になります。ご友人同士でのプライベートな空間をお楽しみください',
 			'男女利用、カップル利用可能ですので、サウナデートにもおすすめです。',
 		],
 	},
 	{
-		left: false,
 		alt: '野沢の壁',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa.jpg?alt=media&token=6d407b07-3680-45e2-8d06-87667a1a08e5',
@@ -60,7 +55,6 @@ const IntroObj: IntroArray = [
 		],
 	},
 	{
-		left: true,
 		alt: 'だるまの庭',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma.jpg?alt=media&token=72763422-ac9d-4bb5-a316-dceb812c1dc6',
@@ -76,7 +70,6 @@ const IntroObj: IntroArray = [
 		],
 	},
 	{
-		left: false,
 		alt: '豊岡の滝',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftaki.jpg?alt=media&token=fa2d7019-1d52-462d-98d4-7d9bffae5558',
@@ -88,7 +81,6 @@ const IntroObj: IntroArray = [
 		],
 	},
 	{
-		left: true,
 		alt: '立道の灯り',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftatemichi.jpg?alt=media&token=e4f21ead-2d93-4680-8f3d-af78235e4df1',
@@ -101,7 +93,7 @@ const IntroObj: IntroArray = [
 	},
 ]
 
-function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
+function IntroductionCard({ alt, urls, text }: IntroductionCardProps) {
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -119,8 +111,23 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 				maxWidth: '400px',
 			}}
 		>
-			{left === false && (
-				<Box sx={{ display: 'flex', backgroundColor: '#000', my: 2 }}>
+			<Box
+				sx={{
+					width: '100%',
+					backgroundColor: '#3A3A3A',
+
+					ml: 2,
+				}}
+			>
+				<Typography variant='h3'>{alt}</Typography>
+				<Box sx={{ p: 1, mt: 3 }}>
+					{text.map((text) => (
+						<Typography variant='body1' key={text} sx={{}}>
+							{text}
+						</Typography>
+					))}
+				</Box>
+				<Box sx={{ display: 'flex', my: 2 }}>
 					<Box sx={{ width: '70%', margin: 'auto' }}>
 						<Slider {...settings}>
 							{urls.map((url, i) => (
@@ -136,60 +143,8 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 							))}
 						</Slider>
 					</Box>
-					<Box
-						sx={{
-							width: '30%',
-							backgroundColor: '#3A3A3A',
-							writingMode: 'vertical-rl',
-							ml: 2,
-						}}
-					>
-						<Typography variant='h3'>{alt}</Typography>
-						<Box sx={{ p: 1, mt: 3 }}>
-							{text.map((text) => (
-								<Typography variant='body1' key={text} sx={{}}>
-									{text}
-								</Typography>
-							))}
-						</Box>
-					</Box>
 				</Box>
-			)}
-			{left === true && (
-				<Box sx={{ display: 'flex', backgroundColor: '#000', my: 2 }}>
-					<Box
-						sx={{
-							width: '30%',
-							backgroundColor: '#3A3A3A',
-							writingMode: 'vertical-rl',
-							mr: 2,
-						}}
-					>
-						<Typography variant='h3'>{alt}</Typography>
-						<Box sx={{ p: 1, mt: 3 }}>
-							{text.map((text) => (
-								<Typography variant='body1' key={text}>
-									{text}
-								</Typography>
-							))}
-						</Box>
-					</Box>
-					<Box sx={{ width: '70%', margin: 'auto' }}>
-						<Slider {...settings}>
-							{urls.map((url, i) => (
-								<Box
-									component='img'
-									width='100%'
-									height='auto'
-									src={url}
-									alt={alt + i}
-									key={url}
-								/>
-							))}
-						</Slider>
-					</Box>
-				</Box>
-			)}
+			</Box>
 		</Container>
 	)
 }
@@ -203,7 +158,6 @@ export default function Introduction() {
 			{IntroObj.map((content, i) => (
 				<IntroductionCard
 					key={i}
-					left={content.left}
 					alt={content.alt}
 					urls={content.urls}
 					text={content.typo}
