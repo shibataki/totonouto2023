@@ -96,7 +96,9 @@ export default function Header() {
 					</Box>
 				</Drawer>
 				<Typography variant='h1' sx={{ fontSize: 14 }}>
-					大阪府八尾市の貸切サウナ
+					大阪府八尾市のサウナ施設
+					<br />
+					貸切サウナととのうと
 				</Typography>
 				<Box sx={{ mr: 0, ml: 'auto' }}>
 					{Icons.map((Icon) => (
@@ -105,7 +107,7 @@ export default function Header() {
 								component='img'
 								src={Icon.url}
 								alt={Icon.name}
-								sx={{ ml: 2, width: '20px', height: '20px' }}
+								sx={{ ml: 1, width: '20px', height: '20px' }}
 							/>
 						</Link>
 					))}
