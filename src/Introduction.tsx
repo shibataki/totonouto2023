@@ -115,8 +115,6 @@ function IntroductionCard({ alt, urls, text }: IntroductionCardProps) {
 				sx={{
 					width: '100%',
 					backgroundColor: '#3A3A3A',
-
-					ml: 2,
 				}}
 			>
 				<Typography variant='h3'>{alt}</Typography>
