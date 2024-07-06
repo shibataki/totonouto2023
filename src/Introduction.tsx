@@ -43,7 +43,7 @@ const IntroObj: IntroArray = [
 		],
 		typo: [
 			'囲炉裏を囲み食事や暖をとり、家族と語らい合う日本古来の様式を取り入れたサウナ室',
-			'6名様までご利用できるサウナ室になります。ご友人同士でのプライベートな空間をお楽しみください',
+			'六名様までご利用できるサウナ室になります。ご友人同士でのプライベートな空間をお楽しみください',
 			'男女利用、カップル利用可能ですので、サウナデートにもおすすめです。',
 		],
 	},
@@ -120,8 +120,8 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 			}}
 		>
 			{left === false && (
-				<Box sx={{ display: 'flex', backgroundColor: '#000' }}>
-					<Box sx={{ width: '75%', margin: 'auto' }}>
+				<Box sx={{ display: 'flex', backgroundColor: '#000', my: 2 }}>
+					<Box sx={{ width: '70%', margin: 'auto' }}>
 						<Slider {...settings}>
 							{urls.map((url, i) => (
 								<Box
@@ -138,37 +138,43 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 					</Box>
 					<Box
 						sx={{
-							width: '25%',
+							width: '30%',
 							backgroundColor: '#3A3A3A',
 							writingMode: 'vertical-rl',
+							ml: 2,
 						}}
 					>
-						<Typography>{alt}</Typography>
-						{text.map((text) => (
-							<Typography key={text} sx={{ fontSize: '8px' }}>
-								{text}
-							</Typography>
-						))}
+						<Typography variant='h3'>{alt}</Typography>
+						<Box sx={{ p: 1, mt: 3 }}>
+							{text.map((text) => (
+								<Typography variant='body1' key={text} sx={{}}>
+									{text}
+								</Typography>
+							))}
+						</Box>
 					</Box>
 				</Box>
 			)}
 			{left === true && (
-				<Box sx={{ display: 'flex', backgroundColor: '#000' }}>
+				<Box sx={{ display: 'flex', backgroundColor: '#000', my: 2 }}>
 					<Box
 						sx={{
-							width: '25%',
+							width: '30%',
 							backgroundColor: '#3A3A3A',
 							writingMode: 'vertical-rl',
+							mr: 2,
 						}}
 					>
-						<Typography>{alt}</Typography>
-						{text.map((text) => (
-							<Typography key={text} sx={{ fontSize: '8px' }}>
-								{text}
-							</Typography>
-						))}
+						<Typography variant='h3'>{alt}</Typography>
+						<Box sx={{ p: 1, mt: 3 }}>
+							{text.map((text) => (
+								<Typography variant='body1' key={text}>
+									{text}
+								</Typography>
+							))}
+						</Box>
 					</Box>
-					<Box sx={{ width: '75%', margin: 'auto' }}>
+					<Box sx={{ width: '70%', margin: 'auto' }}>
 						<Slider {...settings}>
 							{urls.map((url, i) => (
 								<Box
@@ -191,6 +197,9 @@ function IntroductionCard({ left, alt, urls, text }: IntroductionCardProps) {
 export default function Introduction() {
 	return (
 		<>
+			<Typography variant='h2' sx={{ textAlign: 'center', mb: 5 }}>
+				施設紹介
+			</Typography>
 			{IntroObj.map((content, i) => (
 				<IntroductionCard
 					key={i}

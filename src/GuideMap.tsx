@@ -1,9 +1,12 @@
 import React from 'react'
-import { Box, Container } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 
 export default function GuidMap() {
 	return (
-		<Container sx={{ mb: 5 }}>
+		<Container sx={{ mb: 5, mt: 10 }}>
+			<Typography variant='h2' sx={{ textAlign: 'center' }}>
+				施設案内図
+			</Typography>
 			<Box
 				component='img'
 				width='100%'

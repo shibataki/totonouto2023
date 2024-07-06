@@ -28,7 +28,7 @@ export default function Access() {
 	return (
 		<Box sx={{ color: '#FFF', textAlign: 'center' }}>
 			<Box sx={{ mb: 1 }}>
-				<Typography sx={{ fontSize: '18px' }}>アクセス</Typography>
+				<Typography variant='h2'>アクセス</Typography>
 			</Box>
 
 			<Wrapper
@@ -45,17 +45,19 @@ export default function Access() {
 			</Wrapper>
 			<ThemeProvider theme={AccessTheme}>
 				<Box sx={{ mb: 3 }}>
-					<Typography>〒581-0084</Typography>
-					<Typography>大阪府八尾市植松町5-5-15</Typography>
+					<Typography variant='body1'>〒581-0084</Typography>
+					<Typography variant='body1'>大阪府八尾市植松町5-5-15</Typography>
 				</Box>
 				<Box sx={{ mb: 3 }}>
-					<Typography>【電車でお越しの方へ】</Typography>
-					<Typography>JR八尾から徒歩4分</Typography>
-					<Typography>近鉄八尾から徒歩20分</Typography>
+					<Typography variant='body1'>【電車でお越しの方へ】</Typography>
+					<Typography variant='body1'>JR八尾から徒歩4分</Typography>
+					<Typography variant='body1'>近鉄八尾から徒歩20分</Typography>
 				</Box>
 				<Box sx={{ mb: 3 }}>
-					<Typography>【お車でお越しの方へ】</Typography>
-					<Typography>近隣のコインパーキングをご利用ください</Typography>
+					<Typography variant='body1'>【お車でお越しの方へ】</Typography>
+					<Typography variant='body1'>
+						近隣のコインパーキングをご利用ください
+					</Typography>
 				</Box>
 			</ThemeProvider>
 		</Box>

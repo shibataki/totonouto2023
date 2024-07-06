@@ -78,14 +78,24 @@ export default function Price() {
 			>
 				<Grid item xs={12}>
 					<Typography
+						variant='h2'
 						sx={{
-							fontSize: '18px',
-							color: '#FFF',
 							textAlign: 'center',
 							mt: 5,
 						}}
 					>
-						料金
+						料金メニュー
+					</Typography>
+				</Grid>
+				<Grid item xs={12}>
+					<Typography
+						variant='h3'
+						sx={{
+							textAlign: 'center',
+							mt: 5,
+						}}
+					>
+						サウナご利用料金
 					</Typography>
 				</Grid>
 				{saunaName.map((content) => (
@@ -97,7 +107,7 @@ export default function Price() {
 								alignContent: 'center',
 							}}
 						>
-							<Typography sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}>
+							<Typography variant='h3' sx={{ writingMode: 'vertical-rl' }}>
 								{content}
 							</Typography>
 						</Box>
@@ -107,7 +117,8 @@ export default function Price() {
 				<Grid item xs={6} sx={{ height: '105px' }}>
 					{futariPrice.map((content) => (
 						<Typography
-							sx={{ fontSize: '10px', textAlign: 'center', mb: 0.2 }}
+							variant='body1'
+							sx={{ textAlign: 'center', mb: 0.2 }}
 							key={content}
 						>
 							{content}
@@ -117,7 +128,8 @@ export default function Price() {
 				<Grid item xs={6}>
 					{iroriPrice.map((content) => (
 						<Typography
-							sx={{ fontSize: '10px', textAlign: 'center', mb: 0.2 }}
+							variant='body1'
+							sx={{ textAlign: 'center', mb: 0.2 }}
 							key={content}
 						>
 							{content}
@@ -126,9 +138,8 @@ export default function Price() {
 				</Grid>
 				<Grid item xs={12}>
 					<Typography
+						variant='h3'
 						sx={{
-							fontSize: '18px',
-							color: '#FFF',
 							textAlign: 'center',
 							mt: 5,
 						}}
@@ -147,8 +158,8 @@ export default function Price() {
 							}}
 						>
 							<Typography
+								variant='body1'
 								sx={{
-									fontSize: '16px',
 									writingMode: 'vertical-rl',
 									textOrientation: 'upright',
 								}}
@@ -161,16 +172,15 @@ export default function Price() {
 
 				{drinkPrice.map((content) => (
 					<Grid item xs={2.4} key={content.id}>
-						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
+						<Typography variant='body1' sx={{ textAlign: 'center' }}>
 							{content.price}
 						</Typography>
 					</Grid>
 				))}
 				<Grid item xs={12}>
 					<Typography
+						variant='h3'
 						sx={{
-							fontSize: '18px',
-							color: '#FFF',
 							textAlign: 'center',
 							mt: 5,
 						}}
@@ -188,8 +198,8 @@ export default function Price() {
 							}}
 						>
 							<Typography
+								variant='body1'
 								sx={{
-									fontSize: '16px',
 									writingMode: 'vertical-rl',
 									textOrientation: 'upright',
 								}}
@@ -202,16 +212,15 @@ export default function Price() {
 
 				{rentalPrice.map((content) => (
 					<Grid item xs={2} key={content.id}>
-						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
+						<Typography variant='body1' sx={{ textAlign: 'center' }}>
 							{content.price}
 						</Typography>
 					</Grid>
 				))}
 				<Grid item xs={12}>
 					<Typography
+						variant='h3'
 						sx={{
-							fontSize: '18px',
-							color: '#FFF',
 							textAlign: 'center',
 							mt: 5,
 						}}
@@ -228,7 +237,7 @@ export default function Price() {
 								alignContent: 'center',
 							}}
 						>
-							<Typography sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}>
+							<Typography variant='body1' sx={{ writingMode: 'vertical-rl' }}>
 								{content.name}
 							</Typography>
 						</Box>
@@ -237,16 +246,15 @@ export default function Price() {
 
 				{aromaPrice.map((content) => (
 					<Grid item xs={6} key={content.id}>
-						<Typography sx={{ fontSize: '12px', textAlign: 'center' }}>
+						<Typography variant='body1' sx={{ textAlign: 'center' }}>
 							{content.price}
 						</Typography>
 					</Grid>
 				))}
 				<Grid item xs={12}>
 					<Typography
+						variant='h3'
 						sx={{
-							fontSize: '18px',
-							color: '#FFF',
 							textAlign: 'center',
 							mt: 5,
 						}}
@@ -264,7 +272,7 @@ export default function Price() {
 								alignContent: 'center',
 							}}
 						>
-							<Typography sx={{ fontSize: '16px', writingMode: 'vertical-rl' }}>
+							<Typography variant='body1' sx={{ writingMode: 'vertical-rl' }}>
 								{content}
 							</Typography>
 						</Box>
