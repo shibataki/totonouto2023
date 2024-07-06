@@ -16,22 +16,22 @@ import { Link as DomLink } from 'react-router-dom'
 type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
 	{
-		name: 'LINE',
+		name: '貸切裏サウナととのうとの公式LINE',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FLINE_Brand_icon.png?alt=media&token=534427d4-ad3c-4e5e-88e2-4716f6f8e1a7',
 		url2: 'https://lin.ee/vQYTxe4',
 	},
 	{
-		name: 'X',
+		name: '貸切サウナととのうとのX',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2Flogo-white.png?alt=media&token=d911f3a2-cefa-461e-a69d-bc4c40e2794f',
 		url2: 'https://twitter.com/sauna_totonouto',
 	},
 	{
-		name: 'instagram',
+		name: '貸切サウナととのうとのinstagram',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FInstagram_Glyph_White.png?alt=media&token=fe81c495-1b6a-46f2-8fe1-78a1026f87d9',
 		url2: 'https://www.instagram.com/sauna_totonouto/?hl=ja',
 	},
 	{
-		name: 'facebook',
+		name: '貸切サウナととのうとのfacebook',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FFacebook_Logo_Secondary.png?alt=media&token=e612ce07-60ca-48f5-bcf9-a33afde3622d',
 		url2: 'https://www.facebook.com/sauna.totonouto',
 	},
@@ -76,7 +76,7 @@ export default function Header() {
 											offset={-60}
 											onClick={() => setIsOpen(false)}
 										>
-											<Typography sx={{ color: '#FFF' }}>
+											<Typography variant='h2' sx={{ fontSize: 20 }}>
 												{content.text}
 											</Typography>
 										</Scroll>
@@ -86,13 +86,18 @@ export default function Header() {
 							<ListItem disablePadding>
 								<DomLink to='SaunaWords' style={{ textDecoration: 'none' }}>
 									<ListItemButton>
-										<Typography sx={{ color: '#FFF' }}>サウナ用語集</Typography>
+										<Typography variant='h2' sx={{ fontSize: 20 }}>
+											サウナ用語集
+										</Typography>
 									</ListItemButton>
 								</DomLink>
 							</ListItem>
 						</List>
 					</Box>
 				</Drawer>
+				<Typography variant='h1' sx={{ fontSize: 14 }}>
+					大阪府八尾市の貸切サウナ
+				</Typography>
 				<Box sx={{ mr: 0, ml: 'auto' }}>
 					{Icons.map((Icon) => (
 						<Link href={Icon.url2} key={Icon.name}>

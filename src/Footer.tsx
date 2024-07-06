@@ -20,7 +20,7 @@ export default function Footer() {
 				underline='none'
 				sx={{ width: '100%', textAlign: 'center' }}
 			>
-				<Typography sx={{ color: '#FFF', fontSize: '22px' }}>
+				<Typography sx={{ color: '#FFF', fontSize: '30px' }} variant='body1'>
 					ご予約はこちらから
 				</Typography>
 			</Link>

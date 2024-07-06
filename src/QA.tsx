@@ -147,7 +147,8 @@ export default function QA() {
 		<Container sx={{ mb: 5 }}>
 			<Box>
 				<Typography
-					sx={{ color: '#FFF', textAlign: 'center', fontSize: '18px' }}
+					variant='h2'
+					sx={{ color: '#FFF', textAlign: 'center', mb: 2, mt: 10 }}
 				>
 					Q&A
 				</Typography>
@@ -163,16 +164,14 @@ export default function QA() {
 							aria-controls={content.Q}
 							id={content.Q}
 						>
-							<Typography
-								sx={{ width: '100%', flexShrink: 0, fontSize: '14px' }}
-							>
+							<Typography variant='h5' sx={{ width: '100%', flexShrink: 0 }}>
 								{content.Q}
 							</Typography>
 						</AccordionSummary>
 						<AccordionDetails>
 							<Divider sx={{ background: '#FFF', mb: 1 }} />
 							{content.A.map((ans, i) => (
-								<Typography key={i} sx={{ fontSize: '12px' }}>
+								<Typography variant='body1' key={i}>
 									{ans}
 								</Typography>
 							))}

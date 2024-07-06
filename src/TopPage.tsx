@@ -15,6 +15,31 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'
 const theme = createTheme({
 	typography: {
 		fontFamily: ["'Zen Old Mincho', serif"].join(','),
+		h1: {
+			fontWeight: 600,
+			fontSize: 52,
+			color: '#FFF',
+		},
+		h2: {
+			fontWeight: 400,
+			fontSize: 34,
+			color: '#FFF',
+		},
+		h3: {
+			fontWeight: 400,
+			fontSize: 28,
+			color: '#FFF',
+		},
+		h5: {
+			fontWeight: 400,
+			fontSize: 18,
+			color: '#FFF',
+		},
+		body1: {
+			fontWeight: 200,
+			fontSize: 16,
+			color: '#FFF',
+		},
 	},
 })
 
