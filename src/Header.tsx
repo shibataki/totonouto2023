@@ -11,7 +11,7 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import Link from '@mui/material/Link'
 import { Link as Scroll } from 'react-scroll'
-import { Link as DomLink } from 'react-router-dom'
+//import { Link as DomLink } from 'react-router-dom'
 
 type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
@@ -84,13 +84,13 @@ export default function Header() {
 								</ListItem>
 							))}
 							<ListItem disablePadding>
-								<DomLink to='SaunaWords' style={{ textDecoration: 'none' }}>
+								<Link href='SaunaWords' sx={{ textDecoration: 'none' }}>
 									<ListItemButton>
 										<Typography variant='h2' sx={{ fontSize: 20 }}>
 											サウナ用語集
 										</Typography>
 									</ListItemButton>
-								</DomLink>
+								</Link>
 							</ListItem>
 						</List>
 					</Box>
