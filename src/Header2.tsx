@@ -11,7 +11,7 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import Link from '@mui/material/Link'
 
-import { Link as DomLink } from 'react-router-dom'
+//import { Link as DomLink } from 'react-router-dom'
 
 type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
@@ -59,11 +59,11 @@ export default function Header2() {
 					>
 						<List>
 							<ListItem disablePadding>
-								<DomLink to='/' style={{ textDecoration: 'none' }}>
+								<Link href='/' sx={{ textDecoration: 'none' }}>
 									<ListItemButton>
 										<Typography sx={{ color: '#FFF' }}>トップページ</Typography>
 									</ListItemButton>
-								</DomLink>
+								</Link>
 							</ListItem>
 						</List>
 					</Box>
