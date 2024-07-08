@@ -87,7 +87,7 @@ export default function SaunaWords() {
 					sx={{ mt: '60px', mb: '70px', color: '#FFF', p: 2 }}
 				>
 					<Box>
-						<Typography variant='h2' sx={{ my: 2 }}>
+						<Typography variant='h1' sx={{ my: 2 }}>
 							サウナ用語集
 						</Typography>
 					</Box>
