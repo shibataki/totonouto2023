@@ -46,7 +46,7 @@ const IntroObj: IntroArray = [
 		alt: '野沢の壁',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa.jpeg?alt=media&token=e846c6de-c730-4052-bec8-697e368d6563',
-			'',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa2.jpeg?alt=media&token=aab78cc2-a0a8-422d-b30e-2aa2570a9e22',
 		],
 		typo: [
 			'フィンランドのスモークサウナから着想し訪れる人を誘導する',
@@ -71,7 +71,7 @@ const IntroObj: IntroArray = [
 	{
 		alt: '豊岡の滝',
 		urls: [
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftaki.jpg?alt=media&token=fa2d7019-1d52-462d-98d4-7d9bffae5558',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftaki.jpeg?alt=media&token=a7aab4aa-a3e4-4b08-909f-5141774659b9',
 		],
 		typo: [
 			'サウナを愛する皆様に是非とも体感いただきたい、頭上より降り注ぐ滝',
@@ -82,7 +82,7 @@ const IntroObj: IntroArray = [
 	{
 		alt: '立道の灯り',
 		urls: [
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftatemichi.jpg?alt=media&token=e4f21ead-2d93-4680-8f3d-af78235e4df1',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ftatemichi.jpeg?alt=media&token=e5871b55-c1b2-452e-9fcb-c527c7514808',
 		],
 		typo: [
 			'立道親子により施行されました。',
