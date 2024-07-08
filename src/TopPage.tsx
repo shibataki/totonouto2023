@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import Header from './Header'
 import TopLogo from './TopLogo'
-import { Box, Container } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import Introduction from './Introduction'
 import Price from './price'
 import GuidMap from './GuideMap'
@@ -50,6 +50,15 @@ function TopPage() {
 				<Box sx={{ position: 'fixed', top: 0, zIndex: 1000, width: '100%' }}>
 					<Header />
 				</Box>
+				<Typography
+					variant='h1'
+					sx={{ mt: 10, fontSize: '5vw' }}
+					align='center'
+				>
+					大阪府八尾市のサウナ施設
+					<br />
+					貸切サウナととのうと
+				</Typography>
 				<Container maxWidth='sm' sx={{ mt: '40px', mb: '70px' }}>
 					<Box id='top'>
 						<TopLogo />
