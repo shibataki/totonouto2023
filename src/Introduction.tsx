@@ -19,8 +19,8 @@ const IntroObj: IntroArray = [
 	{
 		alt: 'フタリサウナ',
 		urls: [
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari.jpg?alt=media&token=e4bbe4de-07d0-485e-b053-ad644f4eb2be',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpg?alt=media&token=dea80162-b732-4ca1-989c-32b6da5d5510',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpeg?alt=media&token=40a51b52-b757-4e8f-91a0-6d72a4d357a1',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari.jpeg?alt=media&token=3968d423-4f60-4dbe-a688-3214f2262d7b',
 		],
 		typo: [
 			'店主こだわりのサウナ室でプライベートな空間をお楽しみください。',
@@ -31,11 +31,10 @@ const IntroObj: IntroArray = [
 	{
 		alt: 'イロリサウナ',
 		urls: [
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori.jpg?alt=media&token=80a1b1c0-558d-4ee3-9241-3124301e6676',
-
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori2.jpg?alt=media&token=db345b16-4296-4c83-b13a-235ea40c5712',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori3.jpg?alt=media&token=5c1439cd-8580-45ad-91e8-2f0404e3ec03',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori4.jpg?alt=media&token=c6bb03e4-8190-4c4e-92f9-76715e6bdd80',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori.jpeg?alt=media&token=1a3bd9b6-6c76-4d67-ad49-64f6f6d91e22',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori2.jpeg?alt=media&token=44376ac3-aa29-40b1-99d4-66afaabc395d',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori3.jpeg?alt=media&token=361dc426-6e2a-41ad-bf2a-9043fd84c6a8',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori4.jpeg?alt=media&token=7527b22c-571c-4790-a734-9eb522444a9e',
 		],
 		typo: [
 			'囲炉裏を囲み食事や暖をとり、家族と語らい合う日本古来の様式を取り入れたサウナ室。',
@@ -46,8 +45,8 @@ const IntroObj: IntroArray = [
 	{
 		alt: '野沢の壁',
 		urls: [
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa.jpg?alt=media&token=6d407b07-3680-45e2-8d06-87667a1a08e5',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa2.jpg?alt=media&token=1d44f32d-18a3-47b1-a853-1c8fe4c1970c',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa.jpeg?alt=media&token=e846c6de-c730-4052-bec8-697e368d6563',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa2.jpeg?alt=media&token=aab78cc2-a0a8-422d-b30e-2aa2570a9e22',
 		],
 		typo: [
 			'フィンランドのスモークサウナから着想し訪れる人を誘導する',
@@ -57,11 +56,11 @@ const IntroObj: IntroArray = [
 	{
 		alt: 'だるまの庭',
 		urls: [
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma.jpg?alt=media&token=72763422-ac9d-4bb5-a316-dceb812c1dc6',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma2.jpg?alt=media&token=de3eda8c-13a6-4bf7-a2b7-b69037e398f6',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma3.jpg?alt=media&token=c13ee95c-21be-42e6-a1bb-70e9e935c26a',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma4.jpg?alt=media&token=889cd172-d0c7-4f9c-b6e2-6ce382ad50b9',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma5.jpg?alt=media&token=aedbdd61-2e00-464e-91d5-4164ea5a08aa',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma.jpeg?alt=media&token=3f53663c-505d-49e7-99f7-a0279a6d723e',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma2.jpeg?alt=media&token=37202126-2219-4843-8cbe-5495114a9597',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma3.jpeg?alt=media&token=701c786b-8f2f-4676-9531-dd6bf7a7602c',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma4.jpeg?alt=media&token=4cc15789-1a86-4c62-a29f-648923b8e05d',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma5.jpeg?alt=media&token=03a13618-0a92-465c-983d-f2fcc3cf820e',
 		],
 		typo: [
 			'八尾の庭師 だるま 中塚氏により',
