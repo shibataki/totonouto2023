@@ -14,7 +14,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
 	typography: {
-		fontFamily: ["'Zen Old Mincho', serif"].join(','),
+		fontFamily: ["'Noto Sans JP', sans-serif;"].join(','),
 		h1: {
 			fontWeight: 600,
 			fontSize: 40,

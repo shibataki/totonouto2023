@@ -11,20 +11,20 @@ import Link from '@mui/material/Link'
 
 const theme = createTheme({
 	typography: {
-		fontFamily: ["'Zen Old Mincho', serif"].join(','),
+		fontFamily: ["'Noto Sans JP', sans-serif;"].join(','),
 		body1: {
 			fontWeight: 400,
-			fontFamily: "'Noto Sans JP', sans-serif;",
+
 			fontSize: 15,
 		},
-		h2: {
+		h1: {
 			fontWeight: 600,
-			fontFamily: "'Noto Sans JP', sans-serif;",
-			fontSize: 36,
+
+			fontSize: 48,
 		},
 		h3: {
 			fontWeight: 600,
-			fontFamily: "'Noto Sans JP', sans-serif;",
+
 			fontSize: 22,
 		},
 	},
