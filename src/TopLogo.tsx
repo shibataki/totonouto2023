@@ -6,20 +6,20 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const Imgs: { alt: string; url: string }[] = [
 	{
-		alt: '大阪府の貸切サウナととのうと',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg1.png?alt=media&token=687f6259-30e3-4d48-a3d9-38cbc29b96ca',
+		alt: '大阪府の貸切サウナととのうとのサウナストーブ',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2FTopLogo1.jpeg?alt=media&token=badbf268-81af-4519-91d5-b4b5239fc406',
 	},
 	{
 		alt: '大阪府の貸切サウナととのうと',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg2.png?alt=media&token=99ca046f-321a-405a-8e91-bdabab590106',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2FTopLogo2.jpeg?alt=media&token=a8b2ccd0-9367-47d9-b9d7-15818582cf5b',
 	},
 	{
 		alt: '大阪府の貸切サウナととのうと',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg3.png?alt=media&token=a6b6c8e8-e5de-4067-992c-6c78626fe1cb',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2FTopLogo3.jpeg?alt=media&token=c8df48c6-4436-4d2e-a450-5e66d95af4d9',
 	},
 	{
 		alt: '大阪府の貸切サウナととのうと',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2Fimg4.png?alt=media&token=4f2aebd8-765b-403e-bcbb-1d2888642cb1',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2FTopLogo4.jpeg?alt=media&token=f69dd3de-bce1-49c0-93e3-a461c9c23357',
 	},
 ]
 
