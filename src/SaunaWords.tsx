@@ -137,7 +137,7 @@ const wordList: WordItemProps[] = [
 		linkUrls: [''],
 		linkText: [''],
 		imgUrl:
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari.jpg?alt=media&token=e4bbe4de-07d0-485e-b053-ad644f4eb2be',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari.jpeg?alt=media&token=3968d423-4f60-4dbe-a688-3214f2262d7b',
 		alt: '貸切サウナととのうとのサウナストーブ',
 	},
 	{
@@ -149,7 +149,7 @@ const wordList: WordItemProps[] = [
 		linkUrls: [''],
 		linkText: [''],
 		imgUrl:
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori2.jpg?alt=media&token=db345b16-4296-4c83-b13a-235ea40c5712',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Firori2.jpeg?alt=media&token=44376ac3-aa29-40b1-99d4-66afaabc395d',
 		alt: '貸切サウナととのうとのサウナストーン',
 	},
 	{
@@ -215,7 +215,7 @@ const wordList: WordItemProps[] = [
 		linkUrls: ['https://www.instagram.com/daruma.244/'],
 		linkText: ['ニワダルマ'],
 		imgUrl:
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma.jpg?alt=media&token=72763422-ac9d-4bb5-a316-dceb812c1dc6',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma.jpeg?alt=media&token=3f53663c-505d-49e7-99f7-a0279a6d723e',
 		alt: '貸切サウナととのうとの外気浴場',
 	},
 	{
@@ -228,7 +228,7 @@ const wordList: WordItemProps[] = [
 		linkUrls: [''],
 		linkText: [''],
 		imgUrl:
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpg?alt=media&token=dea80162-b732-4ca1-989c-32b6da5d5510',
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpeg?alt=media&token=40a51b52-b757-4e8f-91a0-6d72a4d357a1',
 		alt: '貸切サウナととのうとの水風呂',
 	},
 	{
