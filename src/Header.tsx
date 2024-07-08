@@ -17,25 +17,34 @@ type IconObj = { name: string; url: string; url2: string }
 const Icons: IconObj[] = [
 	{
 		name: '貸切裏サウナととのうとの公式LINE',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FLINE_Brand_icon.png?alt=media&token=534427d4-ad3c-4e5e-88e2-4716f6f8e1a7',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FLINE.png?alt=media&token=143a3c7c-fb0e-4529-994a-9caf2e851200',
 		url2: 'https://lin.ee/vQYTxe4',
 	},
 	{
 		name: '貸切サウナととのうとのX',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2Flogo-white.png?alt=media&token=d911f3a2-cefa-461e-a69d-bc4c40e2794f',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FX.png?alt=media&token=60f0e54c-05da-4ef2-ac51-3385b570b02c',
 		url2: 'https://twitter.com/sauna_totonouto',
 	},
 	{
 		name: '貸切サウナととのうとのinstagram',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FInstagram_Glyph_White.png?alt=media&token=fe81c495-1b6a-46f2-8fe1-78a1026f87d9',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FInstagram.png?alt=media&token=71d0b586-2a87-4c24-a51c-ef54e4f4c3d4',
 		url2: 'https://www.instagram.com/sauna_totonouto/?hl=ja',
 	},
 	{
 		name: '貸切サウナととのうとのfacebook',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2FFacebook_Logo_Secondary.png?alt=media&token=e612ce07-60ca-48f5-bcf9-a33afde3622d',
+		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FHeader%2Ffacebook.png?alt=media&token=0f10422b-2692-47d2-aca3-9d5e7b6fc912',
 		url2: 'https://www.facebook.com/sauna.totonouto',
 	},
 ]
+//画像のプリロード
+
+const images: HTMLImageElement[] = []
+var count = 0
+Icons.forEach((contents) => {
+	images[count] = new Image()
+	images[count].src = contents.url
+	count += 1
+})
 const scrollItems: { id: string; text: string }[] = [
 	{ id: 'top', text: 'ページ最上部' },
 	{ id: 'introduction', text: '施設紹介' },
