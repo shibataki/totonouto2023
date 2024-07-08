@@ -95,7 +95,7 @@ export default function Header() {
 						</List>
 					</Box>
 				</Drawer>
-				<Typography variant='h1' sx={{ fontSize: 14 }}>
+				<Typography variant='h2' sx={{ fontSize: 14 }}>
 					大阪府八尾市のサウナ施設
 					<br />
 					貸切サウナととのうと

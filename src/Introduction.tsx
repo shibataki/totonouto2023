@@ -46,7 +46,7 @@ const IntroObj: IntroArray = [
 		alt: '野沢の壁',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa.jpeg?alt=media&token=e846c6de-c730-4052-bec8-697e368d6563',
-			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fnozawa2.jpeg?alt=media&token=aab78cc2-a0a8-422d-b30e-2aa2570a9e22',
+			'',
 		],
 		typo: [
 			'フィンランドのスモークサウナから着想し訪れる人を誘導する',
@@ -107,7 +107,6 @@ function IntroductionCard({ alt, urls, text }: IntroductionCardProps) {
 		<Container
 			sx={{
 				color: '#FFF',
-				maxWidth: '400px',
 			}}
 		>
 			<Box

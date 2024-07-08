@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -37,6 +37,12 @@ export default function TopLogo() {
 	}
 	return (
 		<Box>
+			<Typography variant='h1' sx={{ mt: 10 }} align='center'>
+				大阪府八尾市のサウナ施設
+				<br />
+				貸切サウナととのうと
+			</Typography>
+
 			<Container
 				sx={{
 					height: 'calc(100vh - 104px)',
