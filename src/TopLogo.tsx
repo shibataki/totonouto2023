@@ -28,9 +28,9 @@ img.src = Imgs[0].url
 const img2 = new Image()
 img2.src = Imgs[1].url
 const img3 = new Image()
-img3.src = Imgs[1].url
+img3.src = Imgs[2].url
 const img4 = new Image()
-img4.src = Imgs[1].url
+img4.src = Imgs[3].url
 
 export default function TopLogo() {
 	const settings = {
