@@ -23,6 +23,15 @@ const Imgs: { alt: string; url: string }[] = [
 	},
 ]
 
+const img = new Image()
+img.src = Imgs[0].url
+const img2 = new Image()
+img2.src = Imgs[1].url
+const img3 = new Image()
+img3.src = Imgs[1].url
+const img4 = new Image()
+img4.src = Imgs[1].url
+
 export default function TopLogo() {
 	const settings = {
 		dots: false,
