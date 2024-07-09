@@ -17,6 +17,15 @@ type IntroArray = {
 }[]
 const IntroObj: IntroArray = [
 	{
+		alt: '貸切サウナととのうと',
+		urls: [
+			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2F%E3%83%AD%E3%82%B3%E3%82%99%E7%99%BD.png?alt=media&token=949aa7e8-886c-4a7b-a790-9be2b2716a28',
+		],
+		typo: [
+			'大阪府八尾市の完全予約制の貸切サウナ。お時間は1枠2時間となります。プライベートな個室空間をたっぷりお楽しみください。カップル利用可能なプランもございます。大阪でのサウナデートにいかがでしょうか。また、サウナ好きのご友人にもぜひぜひご紹介ください。',
+		],
+	},
+	{
 		alt: 'フタリサウナ',
 		urls: [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Ffutari2.jpeg?alt=media&token=40a51b52-b757-4e8f-91a0-6d72a4d357a1',
@@ -24,8 +33,9 @@ const IntroObj: IntroArray = [
 		],
 		typo: [
 			'店主こだわりのサウナ室でプライベートな空間をお楽しみください。',
-			'小さな空間でのセルフロウリュは体感温度をグッと上昇させます。',
+			'小さな空間でのセルフロウリュは体感温度をグッと上昇させます。ぜひ一度ご体験ください。',
 			'熱いサウナがお好みの方におすすめです。',
+			'こちらのお部屋は男女利用不可になります。ご注意ください。',
 		],
 	},
 	{
@@ -38,7 +48,7 @@ const IntroObj: IntroArray = [
 		],
 		typo: [
 			'囲炉裏を囲み食事や暖をとり、家族と語らい合う日本古来の様式を取り入れたサウナ室。',
-			'6名様までご利用できるサウナ室になります。ご友人同士でのプライベートな空間をお楽しみください',
+			'6名様までご利用できるサウナ室になります。プライベートな個室空間をお楽しみください',
 			'男女利用、カップル利用可能ですので、サウナデートにもおすすめです。',
 		],
 	},
@@ -63,9 +73,11 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FIntroduction%2Fdaruma5.jpeg?alt=media&token=03a13618-0a92-465c-983d-f2fcc3cf820e',
 		],
 		typo: [
+			'貸切サウナととのうとの外気浴スペース。',
 			'八尾の庭師 だるま 中塚氏により',
 			'2100年に森になることを想定し作庭されました。',
 			'草花に囲まれた外気浴は格別です。',
+			'サウナ、水風呂後の休憩にどうぞ',
 		],
 	},
 	{
