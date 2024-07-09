@@ -10,10 +10,3 @@
 .slick-next{ right:0!important; }
 .slick-prev{ left:0!important; }
 .slick-arrow{ z-index:2!important; }
-/*.top-logos{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translateY(-50%) translateX(-50%);
-}
-*/

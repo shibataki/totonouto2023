@@ -36,8 +36,12 @@ export default function Access() {
 			</Wrapper>
 
 			<Box sx={{ mb: 3 }}>
+				<Typography variant='body1'>店舗情報</Typography>
 				<Typography variant='body1'>〒581-0084</Typography>
 				<Typography variant='body1'>大阪府八尾市植松町5-5-15</Typography>
+				<Typography variant='body1'>営業時間 10:00〜22:00</Typography>
+				<Typography variant='body1'>定休日 火曜日</Typography>
+				<Typography variant='body1'>クレジット決済可</Typography>
 			</Box>
 			<Box sx={{ mb: 3 }}>
 				<Typography variant='body1'>【電車でお越しの方へ】</Typography>
@@ -47,6 +51,8 @@ export default function Access() {
 			<Box sx={{ mb: 3 }}>
 				<Typography variant='body1'>【お車でお越しの方へ】</Typography>
 				<Typography variant='body1'>
+					無料駐車場はございません。
+					<br />
 					近隣のコインパーキングをご利用ください
 				</Typography>
 			</Box>
