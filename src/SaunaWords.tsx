@@ -442,14 +442,6 @@ const wordList: WordItemProps[] = [
 	},
 ]
 
-const images: HTMLImageElement[] = []
-var count = 0
-wordList.forEach((contents) => {
-	images[count] = new Image()
-	images[count].src = contents.imgUrl
-	count += 1
-})
-
 export default function SaunaWords() {
 	return (
 		<ThemeProvider theme={theme}>
