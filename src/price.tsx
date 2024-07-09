@@ -107,7 +107,10 @@ export default function Price() {
 								alignContent: 'center',
 							}}
 						>
-							<Typography variant='h3' sx={{ writingMode: 'vertical-rl' }}>
+							<Typography
+								variant='body1'
+								sx={{ writingMode: 'vertical-rl', fontSize: 24 }}
+							>
 								{content}
 							</Typography>
 						</Box>
@@ -138,10 +141,11 @@ export default function Price() {
 				</Grid>
 				<Grid item xs={12}>
 					<Typography
-						variant='h3'
+						variant='body1'
 						sx={{
 							textAlign: 'center',
 							mt: 5,
+							fontSize: 24,
 						}}
 					>
 						ドリンク
@@ -179,13 +183,14 @@ export default function Price() {
 				))}
 				<Grid item xs={12}>
 					<Typography
-						variant='h3'
+						variant='body1'
 						sx={{
 							textAlign: 'center',
 							mt: 5,
+							fontSize: 24,
 						}}
 					>
-						レンタル
+						サウナグッズレンタル
 					</Typography>
 				</Grid>
 				{rentalName.map((content) => (
@@ -219,13 +224,14 @@ export default function Price() {
 				))}
 				<Grid item xs={12}>
 					<Typography
-						variant='h3'
+						variant='body1'
 						sx={{
 							textAlign: 'center',
 							mt: 5,
+							fontSize: 24,
 						}}
 					>
-						アロマ
+						ロウリュ用アロマ
 					</Typography>
 				</Grid>
 				{aromaName.map((content) => (
@@ -253,13 +259,14 @@ export default function Price() {
 				))}
 				<Grid item xs={12}>
 					<Typography
-						variant='h3'
+						variant='body1'
 						sx={{
 							textAlign: 'center',
 							mt: 5,
+							fontSize: 24,
 						}}
 					>
-						アメニティ
+						アメニティ（無料）
 					</Typography>
 				</Grid>
 

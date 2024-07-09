@@ -22,7 +22,9 @@ const IntroObj: IntroArray = [
 			'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2F%E3%83%AD%E3%82%B3%E3%82%99%E7%99%BD.png?alt=media&token=949aa7e8-886c-4a7b-a790-9be2b2716a28',
 		],
 		typo: [
-			'大阪府八尾市の完全予約制の貸切サウナ。お時間は1枠2時間となります。プライベートな個室空間をたっぷりお楽しみください。カップル利用可能なプランもございます。大阪でのサウナデートにいかがでしょうか。また、サウナ好きのご友人にもぜひぜひご紹介ください。',
+			'大阪府八尾市の完全予約制の貸切サウナ。',
+			'お時間は1枠2時間となります。プライベートな個室空間をたっぷりお楽しみください。カップル利用可能なプランもございます。大阪でのサウナデートにいかがでしょうか。また、サウナ好きのご友人にもぜひぜひご紹介ください。',
+			'ととのうとのサウナはいずれのプランも水風呂付きになります。',
 		],
 	},
 	{
@@ -77,7 +79,7 @@ const IntroObj: IntroArray = [
 			'八尾の庭師 だるま 中塚氏により',
 			'2100年に森になることを想定し作庭されました。',
 			'草花に囲まれた外気浴は格別です。',
-			'サウナ、水風呂後の休憩にどうぞ',
+			'最高のととのい空間での休憩をお楽しみください。',
 		],
 	},
 	{
@@ -89,6 +91,7 @@ const IntroObj: IntroArray = [
 			'サウナを愛する皆様に是非とも体感いただきたい、頭上より降り注ぐ滝',
 			'頭からドバッと水を被りたい方におすすめです。※冬場は水がかなり冷たく',
 			'豊岡親子により施行されました',
+			'場所が少しわかりにくいですので、詳細は受付にておたずねください。',
 		],
 	},
 	{
@@ -141,7 +144,7 @@ function IntroductionCard({ alt, urls, text }: IntroductionCardProps) {
 				<Typography variant='h3'>{alt}</Typography>
 				<Box sx={{ p: 1, mt: 3 }}>
 					{text.map((text) => (
-						<Typography variant='body1' key={text} sx={{}}>
+						<Typography variant='body1' key={text}>
 							{text}
 						</Typography>
 					))}

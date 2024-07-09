@@ -52,6 +52,7 @@ const scrollItems: { id: string; text: string }[] = [
 	{ id: 'guidMap', text: 'フロアマップ' },
 	{ id: 'QA', text: 'よくある質問' },
 	{ id: 'access', text: 'アクセス' },
+	{ id: 'campaign', text: 'キャンペーン' },
 ]
 
 export default function Header() {
