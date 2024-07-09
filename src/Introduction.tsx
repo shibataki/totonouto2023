@@ -144,7 +144,7 @@ function IntroductionCard({ alt, urls, text }: IntroductionCardProps) {
 				<Typography variant='h3'>{alt}</Typography>
 				<Box sx={{ p: 1, mt: 3 }}>
 					{text.map((text) => (
-						<Typography variant='body1' key={text} sx={{}}>
+						<Typography variant='body1' key={text}>
 							{text}
 						</Typography>
 					))}
