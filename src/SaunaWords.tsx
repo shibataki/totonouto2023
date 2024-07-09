@@ -71,62 +71,6 @@ function WordItem({
 	)
 }
 
-export default function SaunaWords() {
-	return (
-		<ThemeProvider theme={theme}>
-			<Container
-				sx={{
-					p: 0,
-				}}
-			>
-				<Box sx={{ position: 'fixed', top: 0, zIndex: 1000, width: '100%' }}>
-					<Header2 />
-				</Box>
-				<Container
-					maxWidth='sm'
-					sx={{ mt: '60px', mb: '70px', color: '#FFF', p: 2 }}
-				>
-					<Box>
-						<Typography variant='h1' sx={{ my: 2 }}>
-							サウナ用語集
-						</Typography>
-					</Box>
-					<Box sx={{ px: 2 }}>
-						{wordList.map((Item) => (
-							<WordItem
-								word={Item.word}
-								text={Item.text}
-								linkUrls={Item.linkUrls}
-								linkText={Item.linkText}
-								imgUrl={Item.imgUrl}
-								alt={Item.alt}
-								key={Item.word}
-							/>
-						))}
-					</Box>
-					<Box>
-						<Typography variant='body2'>
-							誤り、載せて欲しい用語があれば店主まで。
-						</Typography>
-						<Typography variant='body2'>
-							サウナタイム様の記事を参考にさせていただきました。
-						</Typography>
-						<Link
-							href='https://saunatime.jp/sauna-wiki/'
-							sx={{ color: '#99CCFF' }}
-							color='inherit'
-						>
-							<Typography variant='body2'>
-								これで全てがわかる！サウナ用語集【サウナWiki】
-							</Typography>
-						</Link>
-					</Box>
-				</Container>
-			</Container>
-		</ThemeProvider>
-	)
-}
-
 const wordList: WordItemProps[] = [
 	{
 		word: 'サウナストーブ',
@@ -497,3 +441,67 @@ const wordList: WordItemProps[] = [
 		alt: '',
 	},
 ]
+
+const images: HTMLImageElement[] = []
+var count = 0
+wordList.forEach((contents) => {
+	images[count] = new Image()
+	images[count].src = contents.imgUrl
+	count += 1
+})
+
+export default function SaunaWords() {
+	return (
+		<ThemeProvider theme={theme}>
+			<Container
+				sx={{
+					p: 0,
+				}}
+			>
+				<Box sx={{ position: 'fixed', top: 0, zIndex: 1000, width: '100%' }}>
+					<Header2 />
+				</Box>
+				<Container
+					maxWidth='sm'
+					sx={{ mt: '60px', mb: '70px', color: '#FFF', p: 2 }}
+				>
+					<Box>
+						<Typography variant='h1' sx={{ my: 2 }}>
+							サウナ用語集
+						</Typography>
+					</Box>
+					<Box sx={{ px: 2 }}>
+						{wordList.map((Item) => (
+							<WordItem
+								word={Item.word}
+								text={Item.text}
+								linkUrls={Item.linkUrls}
+								linkText={Item.linkText}
+								imgUrl={Item.imgUrl}
+								alt={Item.alt}
+								key={Item.word}
+							/>
+						))}
+					</Box>
+					<Box>
+						<Typography variant='body2'>
+							誤り、載せて欲しい用語があれば店主まで。
+						</Typography>
+						<Typography variant='body2'>
+							サウナタイム様の記事を参考にさせていただきました。
+						</Typography>
+						<Link
+							href='https://saunatime.jp/sauna-wiki/'
+							sx={{ color: '#99CCFF' }}
+							color='inherit'
+						>
+							<Typography variant='body2'>
+								これで全てがわかる！サウナ用語集【サウナWiki】
+							</Typography>
+						</Link>
+					</Box>
+				</Container>
+			</Container>
+		</ThemeProvider>
+	)
+}
