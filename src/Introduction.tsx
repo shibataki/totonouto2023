@@ -147,7 +147,6 @@ function IntroductionCard({ alt, urls, text }: IntroductionCardProps) {
 									<Box
 										component='img'
 										width='100%'
-										height='auto'
 										src={url}
 										alt={alt + i}
 										key={url}
