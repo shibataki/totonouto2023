@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 
 import { Box, Typography } from '@mui/material'
 
@@ -21,20 +21,20 @@ export default function Access() {
 			<Box sx={{ mb: 1 }}>
 				<Typography variant='h2'>アクセス・店舗情報</Typography>
 			</Box>
-
-			<Wrapper
-				apiKey={process.env.REACT_APP_MAPS_JAVASCRIPT_APIKEY}
-				render={render}
-			>
-				<Map
-					style={{ width: '100%', aspectRatio: '1/1' }}
-					center={position}
-					zoom={15}
+			<Suspense fallback={<div>Loading...</div>}>
+				<Wrapper
+					apiKey={process.env.REACT_APP_MAPS_JAVASCRIPT_APIKEY}
+					render={render}
 				>
-					<Marker position={position} />
-				</Map>
-			</Wrapper>
-
+					<Map
+						style={{ width: '100%', aspectRatio: '1/1' }}
+						center={position}
+						zoom={15}
+					>
+						<Marker position={position} />
+					</Map>
+				</Wrapper>
+			</Suspense>
 			<Box sx={{ mb: 3 }}>
 				<Typography variant='body1'>店舗情報</Typography>
 				<Typography variant='body1'>〒581-0084</Typography>
