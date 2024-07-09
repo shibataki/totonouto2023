@@ -106,7 +106,7 @@ export default function Header() {
 					</Box>
 				</Drawer>
 				<Typography variant='h2' sx={{ fontSize: 14 }}>
-					大阪府八尾市のサウナ施設
+					大阪府/八尾市
 					<br />
 					貸切サウナととのうと
 				</Typography>

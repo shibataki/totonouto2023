@@ -84,7 +84,7 @@ export default function Price() {
 							mt: 5,
 						}}
 					>
-						料金メニュー
+						【料金メニュー】
 					</Typography>
 				</Grid>
 				<Grid item xs={12}>
