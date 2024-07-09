@@ -9,10 +9,7 @@ const Imgs: { alt: string; url: string }[] = [
 		alt: '大阪府の貸切サウナととのうと',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2FtopLogo1.jpeg?alt=media&token=b5bd74d5-dedf-491e-8ddb-29e7936fffd1',
 	},
-	{
-		alt: '大阪府の貸切サウナととのうと',
-		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2FtopLogo2.jpeg?alt=media&token=e9e50517-e10b-4cba-9d27-46a95564dbad',
-	},
+
 	{
 		alt: '大阪府の貸切サウナととのうと',
 		url: 'https://firebasestorage.googleapis.com/v0/b/totonouto.appspot.com/o/img%2FTopLogo%2FtopLogo3.jpeg?alt=media&token=3ad2b7b5-91a4-4b79-94ef-854e17d4992c',
