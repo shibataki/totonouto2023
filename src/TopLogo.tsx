@@ -12,8 +12,10 @@ export default function TopLogo() {
 		<Box>
 			<Container
 				sx={{
-					height: 'calc(100vh - 104px)',
+					width: '100%',
+					//height: 'calc(100vh - 104px)',
 					position: 'relative',
+					mb: 5,
 				}}
 			>
 				<Box
