@@ -107,16 +107,6 @@ const IntroObj: IntroArray = [
 	},
 ]
 
-const images: HTMLImageElement[] = []
-var count = 0
-IntroObj.forEach((contents) =>
-	contents.urls.forEach((src) => {
-		images[count] = new Image()
-		images[count].src = src
-		count += 1
-	})
-)
-
 function IntroductionCard({ alt, urls, text }: IntroductionCardProps) {
 	const settings = {
 		dots: false,
