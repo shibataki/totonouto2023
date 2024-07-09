@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import './App.css'
 import Header from './Header'
 import TopLogo from './TopLogo'
@@ -8,12 +8,12 @@ import Footer from './Footer'
 
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 
-const Introduction = React.lazy(() => import('./Introduction'))
-const Price = React.lazy(() => import('./price'))
-const GuideMap = React.lazy(() => import('./GuideMap'))
-const QA = React.lazy(() => import('./QA'))
-const Access = React.lazy(() => import('./Access'))
-const Campaign = React.lazy(() => import('./Campaign'))
+import Introduction from './Introduction'
+import Price from './price'
+import GuideMap from './GuideMap'
+import QA from './QA'
+import Access from './Access'
+import Campaign from './Campaign'
 
 const theme = createTheme({
 	typography: {
@@ -65,26 +65,25 @@ function TopPage() {
 					<Box id='top'>
 						<TopLogo />
 					</Box>
-					<Suspense fallback={<div>Loading...</div>}>
-						<Box id='introduction'>
-							<Introduction />
-						</Box>
-						<Box id='price'>
-							<Price />
-						</Box>
-						<Box id='guidMap'>
-							<GuideMap />
-						</Box>
-						<Box id='QA'> </Box>
-						<QA />
 
-						<Box id='access'>
-							<Access />
-						</Box>
-						<Box id='campaign'>
-							<Campaign />
-						</Box>
-					</Suspense>
+					<Box id='introduction'>
+						<Introduction />
+					</Box>
+					<Box id='price'>
+						<Price />
+					</Box>
+					<Box id='guidMap'>
+						<GuideMap />
+					</Box>
+					<Box id='QA'> </Box>
+					<QA />
+
+					<Box id='access'>
+						<Access />
+					</Box>
+					<Box id='campaign'>
+						<Campaign />
+					</Box>
 				</Container>
 				<Box sx={{ position: 'fixed', bottom: 0, zIndex: 1000, width: '100%' }}>
 					<Footer />
