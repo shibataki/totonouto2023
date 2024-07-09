@@ -1,44 +1,25 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 
 import { Box, Typography } from '@mui/material'
-
-import { Wrapper, Status } from '@googlemaps/react-wrapper'
-import { Map } from './Map'
-import { Marker } from './Marker'
-
-const render = (status: Status) => {
-	return <h1>{status}</h1>
-}
+import Link from '@mui/material/Link'
 
 export default function Access() {
-	const position: google.maps.LatLngLiteral = {
-		lat: 34.616142,
-		lng: 135.5936519,
-	}
-
 	return (
 		<Box sx={{ color: '#FFF', textAlign: 'center', mb: 8 }}>
 			<Box sx={{ mb: 1 }}>
 				<Typography variant='h2'>【アクセス】</Typography>
 			</Box>
-			<Suspense fallback={<div>Loading...</div>}>
-				<Wrapper
-					apiKey={process.env.REACT_APP_MAPS_JAVASCRIPT_APIKEY}
-					render={render}
-				>
-					<Map
-						style={{ width: '100%', aspectRatio: '1/1' }}
-						center={position}
-						zoom={15}
-					>
-						<Marker position={position} />
-					</Map>
-				</Wrapper>
-			</Suspense>
+
 			<Box sx={{ mb: 3 }}>
 				<Typography variant='body1'>店舗情報</Typography>
+
 				<Typography variant='body1'>〒581-0084</Typography>
 				<Typography variant='body1'>大阪府八尾市植松町5-5-15</Typography>
+				<Link href='https://www.google.com/maps/place/%E8%B2%B8%E5%88%87%E3%82%B5%E3%82%A6%E3%83%8A%E3%81%A8%E3%81%A8%E3%81%AE%E3%81%86%E3%81%A8/@34.6161464,135.591077,17z/data=!3m1!4b1!4m6!3m5!1s0x6000d9fd0c5b2105:0x84d2c47a31899af3!8m2!3d34.616142!4d135.5936519!16s%2Fg%2F11rr3zld5c?entry=ttu'>
+					<Typography variant='body1' sx={{ color: '#99CCFF' }}>
+						Googleマップはこちらをクリック
+					</Typography>
+				</Link>
 				<Typography variant='body1'>営業時間 10:00〜22:00</Typography>
 				<Typography variant='body1'>定休日 火曜日</Typography>
 				<Typography variant='body1'>クレジットカード決済可</Typography>
