@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
 
-export default function GuidMap() {
+export default function GuideMap() {
 	return (
 		<Container sx={{ mb: 5, mt: 10 }}>
 			<Typography variant='h2' sx={{ textAlign: 'center' }}>

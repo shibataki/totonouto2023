@@ -3,15 +3,24 @@ import './App.css'
 import Header from './Header'
 import TopLogo from './TopLogo'
 import { Box, Container, Typography } from '@mui/material'
-import Introduction from './Introduction'
-import Price from './price'
-import GuidMap from './GuideMap'
-import QA from './QA'
-import Access from './Access'
-import Campaign from './Campaign'
+
+//import Introduction from './Introduction'
+//import Price from './price'
+//import GuideMap from './GuideMap'
+//import QA from './QA'
+//import Access from './Access'
+//import Campaign from './Campaign'
 import Footer from './Footer'
 
 import { ThemeProvider, createTheme } from '@mui/material/styles'
+import lazyImport from './lazyImport'
+
+const Introduction = lazyImport(() => import('./Introduction'))
+const Price = lazyImport(() => import('./price'))
+const GuideMap = lazyImport(() => import('./GuideMap'))
+const QA = lazyImport(() => import('./QA'))
+const Access = lazyImport(() => import('./Access'))
+const Campaign = lazyImport(() => import('./Campaign'))
 
 const theme = createTheme({
 	typography: {
@@ -70,7 +79,7 @@ function TopPage() {
 						<Price />
 					</Box>
 					<Box id='guidMap'>
-						<GuidMap />
+						<GuideMap />
 					</Box>
 					<Box id='QA'> </Box>
 					<QA />

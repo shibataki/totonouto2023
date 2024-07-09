@@ -3,8 +3,10 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import TopPage from './TopPage'
-import SaunaWords from './SaunaWords'
 
+import lazyImport from './lazyImport'
+
+const SaunaWords = lazyImport(() => import('./SaunaWords'))
 function App() {
 	return (
 		<>
