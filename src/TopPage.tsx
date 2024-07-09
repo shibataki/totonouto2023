@@ -55,7 +55,7 @@ function TopPage() {
 					2024年リニューアル
 				</Typography>
 				<Typography variant='h1' sx={{ fontSize: '5vw' }} align='center'>
-					大阪府八尾市
+					関西｜大阪府|八尾市|完全予約制
 					<br />
 					貸切サウナととのうと
 				</Typography>
