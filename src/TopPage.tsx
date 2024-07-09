@@ -8,6 +8,7 @@ import Price from './price'
 import GuidMap from './GuideMap'
 import QA from './QA'
 import Access from './Access'
+import Campaign from './Campaign'
 import Footer from './Footer'
 
 import { ThemeProvider, createTheme } from '@mui/material/styles'
@@ -50,11 +51,10 @@ function TopPage() {
 				<Box sx={{ position: 'fixed', top: 0, zIndex: 1000, width: '100%' }}>
 					<Header />
 				</Box>
-				<Typography
-					variant='h1'
-					sx={{ mt: 10, fontSize: '5vw' }}
-					align='center'
-				>
+				<Typography variant='body1' align='center' sx={{ mt: 10, mb: 1 }}>
+					2024年リニューアル
+				</Typography>
+				<Typography variant='h1' sx={{ fontSize: '5vw' }} align='center'>
 					大阪府八尾市のサウナ施設
 					<br />
 					貸切サウナととのうと
@@ -77,6 +77,9 @@ function TopPage() {
 
 					<Box id='access'>
 						<Access />
+					</Box>
+					<Box id='campaign'>
+						<Campaign />
 					</Box>
 				</Container>
 				<Box sx={{ position: 'fixed', bottom: 0, zIndex: 1000, width: '100%' }}>
