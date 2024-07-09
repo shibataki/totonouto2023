@@ -167,7 +167,7 @@ export default function Introduction() {
 	return (
 		<>
 			<Typography variant='h2' sx={{ textAlign: 'center', mb: 5 }}>
-				施設紹介
+				【施設紹介】
 			</Typography>
 			{IntroObj.map((content, i) => (
 				<IntroductionCard

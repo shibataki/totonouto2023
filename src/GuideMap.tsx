@@ -5,7 +5,7 @@ export default function GuideMap() {
 	return (
 		<Container sx={{ mb: 5, mt: 10 }}>
 			<Typography variant='h2' sx={{ textAlign: 'center' }}>
-				施設案内図
+				【施設案内図】
 			</Typography>
 			<Suspense fallback={<div>Loading...</div>}>
 				<Box
